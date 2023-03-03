@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './header.scss';
 
 import { NavLink } from 'react-router-dom';
@@ -11,6 +11,8 @@ import logo from '../../assets/images/logo.svg';
 import Hamburger from 'hamburger-react';
 
 const Header = () => {
+  const elNavbar = useRef(null);
+  const elNavbarr = useRef(null);
   const [lang, setLang] = useLang('uz');
   const [isOpen, setOpen] = useState(false);
 
@@ -32,7 +34,7 @@ const Header = () => {
           </NavLink>
         </div>
 
-        <nav className='header__navbar'>
+        <nav className='header__navbar' ref={elNavbar}>
           <ul className='header__list'>
             <li className='header__list__item'>
               <NavLink to='/' className='header__list__item__link'>
@@ -70,14 +72,24 @@ const Header = () => {
           </select>
         </div>
 
-        <div className='header__btn'>
+        <div className='header__btn' ref={elNavbarr}>
           <button className='header__button'>
             {content[lang].navbar.contact_button}
           </button>
         </div>
 
         <div className='header__hamburger'>
-          <Hamburger toggled={isOpen} toggle={setOpen} size={27} />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={27}
+            rounded
+            hideOutline={false}
+            onToggle={() => {
+              elNavbar.current.classList.toggle('wrapper--active');
+              elNavbarr.current.classList.toggle('wrapper--active');
+            }}
+          />
         </div>
       </div>
     </div>

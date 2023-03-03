@@ -117,6 +117,7 @@
   outline: none;
   border: 2px solid white;
   margin-left: 100%;
+  background-color: #fff;
 }
 .header__list__arrow {
   transform: rotate(270deg);
@@ -128,12 +129,47 @@
 }
 
 @media only screen and (max-width: 1160px) {
+  .wrapper--active {
+    display: block;
+  }
   .header__navbar {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background-color: #003a5a;
+    text-align: center;
+    margin-top: 70px;
+    z-index: 1000px;
+  }
+
+  .header__list__item__link {
+    color: white;
+    font-size: 25px;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 70px;
   }
 
   .header__btn {
     display: none;
+    // position: absolute;
+    bottom: -550%;
+    margin: 0 auto;
+  }
+
+  .header__button {
+    font-size: 16px;
+    background-color: #f88664;
+    padding: 15px 30px;
+    // position: absolute;
   }
 
   .header__hamburger {
