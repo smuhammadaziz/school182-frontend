@@ -1,6 +1,9 @@
 .forms {
   width: 100%;
-  text-align: center;
+
+  .sarlavha2 {
+    text-align: center;
+  }
 
   .container {
     width: calc(100% - 10%);
@@ -57,8 +60,9 @@
           border: 2px solid #ec8d71;
           color: white;
           background-color: #f78664;
-          width: 184px;
-          height: 44px;
+          padding: 12px 50px;
+          font-size: 20px;
+          text-transform: uppercase;
           border-radius: 8px;
           -webkit-border-radius: 8px;
           -moz-border-radius: 8px;
