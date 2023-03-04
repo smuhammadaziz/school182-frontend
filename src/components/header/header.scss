@@ -201,4 +201,14 @@
     width: 62px;
     height: 28px;
   }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 0px;
+  }
+
+  .header__hamburger--active {
+    margin-top: 65px;
+  }
 }
