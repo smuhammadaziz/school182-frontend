@@ -24,15 +24,15 @@ function Home() {
         <News />
         <Administration />
         <Statistics />
-        <Teachres />
+        {/* <Teachres /> */}
         <Students />
         <Form />
         <Map />
       </main>
 
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }
