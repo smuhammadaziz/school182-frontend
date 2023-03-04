@@ -27,20 +27,20 @@ function Intro() {
         className='mySwiper'
       >
         <SwiperSlide>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur velit
-          quidem illo totam expedita esse cupiditate voluptates commodi ad.
+          Odio aspernatur velit quidem illo totam expedita esse cupiditate voluptates
+          commodi ad.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur velit
-          quidem illo totam expedita esse cupiditate voluptates commodi ad.
+          Odio aspernatur velit quidem illo totam expedita esse cupiditate voluptates
+          commodi ad.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur velit
-          quidem illo totam expedita esse cupiditate voluptates commodi ad.
+          Odio aspernatur velit quidem illo totam expedita esse cupiditate voluptates
+          commodi ad.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur velit
-          quidem illo totam expedita esse cupiditate voluptates commodi ad.
+          Odio aspernatur velit quidem illo totam expedita esse cupiditate voluptates
+          commodi ad.
         </SwiperSlide>
       </Swiper>
     </div>
