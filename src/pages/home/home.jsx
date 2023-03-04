@@ -30,9 +30,9 @@ function Home() {
         <Map />
       </main>
 
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 }
