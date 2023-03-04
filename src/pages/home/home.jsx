@@ -5,6 +5,7 @@ import Header from '../../components/header/header';
 import Intro from '../../components/intro/intro';
 import Administration from '../../components/administration/administration';
 import News from '../../components/news/news';
+import Statistics from '../../components/statistics/statistics';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <Intro />
         <Administration />
         <News />
+        <Statistics />
       </main>
     </div>
   );
