@@ -86,8 +86,7 @@ const Header = () => {
             rounded
             hideOutline={false}
             onToggle={() => {
-              elNavbar.current.classList.toggle('wrapper--active');
-              elNavbarr.current.classList.toggle('wrapper--active');
+              elNavbar.current.classList.toggle('header__hamburger--active');
             }}
           />
         </div>

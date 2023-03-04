@@ -7,6 +7,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  transition: all 0.5s ease;
 }
 
 .header .container {
@@ -129,11 +130,12 @@
 }
 
 @media only screen and (max-width: 1160px) {
-  .wrapper--active {
-    display: block;
-  }
   .header__navbar {
     display: none;
+  }
+
+  .header__hamburger--active {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -142,7 +144,7 @@
     flex-direction: column;
     background-color: #003a5a;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 82px;
     z-index: 1000px;
   }
 
