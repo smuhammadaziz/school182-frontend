@@ -16,8 +16,8 @@ function Home() {
 
       <main>
         <Intro />
-        <Administration />
         <News />
+        <Administration />
         <Statistics />
       </main>
     </div>
