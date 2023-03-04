@@ -1,13 +1,12 @@
 const content = {
   ru: {
     navbar: {
-      home: 'home',
-      news: 'news',
-      school: 'school',
-      students: 'students',
-      teachers: 'teachers',
-      contact: 'contact',
-      administration: 'administration',
+      home: 'Главная',
+      news: 'Новости',
+      students: 'Ученики',
+      teachers: 'Учителя',
+      contact: 'Контакты',
+      administration: 'Администрация',
       contact_button: 'contact us',
     },
     intro: {
@@ -19,7 +18,6 @@ const content = {
     navbar: {
       home: 'bosh sahifa',
       news: 'yangiliklar',
-      school: 'maktab',
       students: 'oquvchilar',
       teachers: 'ustozlar',
       contact: 'boglanish',

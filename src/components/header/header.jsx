@@ -48,7 +48,7 @@ const Header = () => {
             </li>
 
             <li className='header__list__item'>
-              <NavLink to='/' className='header__list__item__link'>
+              <NavLink to='/contact' className='header__list__item__link'>
                 {content[lang].navbar.contact}
               </NavLink>
             </li>
