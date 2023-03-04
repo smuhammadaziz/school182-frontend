@@ -25,7 +25,7 @@ const Header = () => {
   };
   return (
     <div className='header'>
-      <div className='container'>
+      <div className='container  header__wrapper'>
         <div className='header__logo'>
           <NavLink to='/' className='header__logo__link'>
             <p className='header__logo__text'>
