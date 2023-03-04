@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 2,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+        
+    },
+    {
+        "id": 3,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 4,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 5,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 6,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 7,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 8,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+    {
+        "id": 9,
+        "img": "/src/assets/images/school.jpg",
+        "event": "Bayram tadbirlar bo'lsa qo'yiladigan yangiliklar",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    },
+     {
+        "id": 10,
+         "img": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/09/swiss-alps.jpg",
+        "event": "mountains",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis vitae provident mollitia ad repellendus, voluptatem fugit deleniti ratione necessitatibus."
+    }
+]

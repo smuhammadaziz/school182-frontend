@@ -1,0 +1,42 @@
+[
+    { "id": 1,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 2,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 3,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 4,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 5,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 6,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 7,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    },
+    { "id": 8,
+        "TeacherPhoto": "../assets/images/teacherphoto.jpg",
+        "TeacherName": "Hikmat Hikmatiy",
+        "Job": "O'qituvchi"
+    }
+]
