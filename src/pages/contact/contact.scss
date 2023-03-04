@@ -1,0 +1,32 @@
+.contact__page {
+  background-color: #f8f8f8;
+}
+
+.contact__main {
+  margin-top: 100px;
+  padding: 50px 0;
+}
+
+.contact__main__heading {
+  padding: 23px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact__info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact__info__map h2 {
+  margin-bottom: 30px;
+}
+
+.contact__info__list {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  list-style-type: none;
+}
