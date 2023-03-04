@@ -1,7 +1,8 @@
 .newsPart {
+  margin-top: 100px;
   margin-bottom: 100px;
   .NewsHeading {
-    font-family: 'Inter';
+    // font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
@@ -41,8 +42,8 @@
       font-size: 20px;
 
       transition: all 0.5s ease-in;
-      text-transform: uppercase;
-      font-family: sans-serif;
+      // text-transform: uppercase;
+      // font-family: sans-serif;
       border: 2px solid #f88664;
 
       &:hover {
@@ -93,7 +94,7 @@
       }
 
       .Eventname {
-        font-family: 'Inter';
+        // font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 34px;
@@ -110,7 +111,7 @@
 @media only screen and (max-width: 1430px) {
   .newsPart {
     .NewsHeading {
-      font-family: 'Inter';
+      // font-family: 'Inter';
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -159,7 +160,7 @@
         }
 
         .Eventname {
-          font-family: 'Inter';
+          // font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
           font-size: 34px;
@@ -175,7 +176,7 @@
 @media only screen and (max-width: 1150px) {
   .newsPart {
     .NewsHeading {
-      font-family: 'Inter';
+      // font-family: 'Inter';
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -224,7 +225,7 @@
         }
 
         .Eventname {
-          font-family: 'Inter';
+          // font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
           font-size: 34px;
@@ -240,7 +241,7 @@
 @media only screen and (max-width: 992px) {
   .newsPart {
     .NewsHeading {
-      font-family: 'Inter';
+      // font-family: 'Inter';
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -289,7 +290,7 @@
         }
 
         .Eventname {
-          font-family: 'Inter';
+          // font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
           font-size: 34px;
@@ -305,7 +306,7 @@
 @media only screen and (max-width: 768px) {
   .newsPart {
     .NewsHeading {
-      font-family: 'Inter';
+      // font-family: 'Inter';
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -355,7 +356,7 @@
         }
 
         .Eventname {
-          font-family: 'Inter';
+          // font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
           font-size: 34px;
@@ -371,7 +372,7 @@
 @media only screen and (max-width: 492px) {
   .newsPart {
     .NewsHeading {
-      font-family: 'Inter';
+      // font-family: 'Inter';
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -421,7 +422,7 @@
         }
 
         .Eventname {
-          font-family: 'Inter';
+          // font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
           font-size: 20px;

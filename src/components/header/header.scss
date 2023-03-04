@@ -190,7 +190,7 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 375px) {
   .header {
     padding: 0;
   }
@@ -206,7 +206,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   .header__hamburger--active {
