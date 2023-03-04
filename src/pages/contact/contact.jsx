@@ -3,6 +3,7 @@ import './contact.scss';
 
 //components
 import Header from '../../components/header/header';
+import ContactForm from '../../components/form/form';
 
 function Contact() {
   return (
@@ -43,6 +44,10 @@ function Contact() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section>
+          <ContactForm />
         </section>
       </main>
     </div>
