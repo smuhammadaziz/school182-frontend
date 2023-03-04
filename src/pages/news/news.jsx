@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.scss';
+import './news.scss';
 
 //components
 import Header from '../../components/header/header';
