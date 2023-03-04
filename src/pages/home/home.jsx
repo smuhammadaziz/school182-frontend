@@ -1,7 +1,10 @@
 import React from 'react';
+
+//components
 import Header from '../../components/header/header';
 import Intro from '../../components/intro/intro';
 import Administration from '../../components/administration/administration';
+import News from '../../components/news/news';
 
 function Home() {
   return (
@@ -13,6 +16,7 @@ function Home() {
       <main>
         <Intro />
         <Administration />
+        <News />
       </main>
     </div>
   );
