@@ -10,6 +10,7 @@ import Teachres from '../../components/teachers/teachers';
 import Students from '../../components/students/students';
 import Form from '../../components/form/form';
 import Map from '../../components/googlemap/map';
+import Footer from '../../components/footer/footer';
 
 function Home() {
   return (
@@ -28,6 +29,10 @@ function Home() {
         <Form />
         <Map />
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
