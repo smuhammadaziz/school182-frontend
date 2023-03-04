@@ -8,6 +8,7 @@ import News from '../../components/news/news';
 import Statistics from '../../components/statistics/statistics';
 import Teachres from '../../components/teachers/teachers';
 import Students from '../../components/students/students';
+import Form from '../../components/form/form';
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
         <Statistics />
         <Teachres />
         <Students />
+        <Form />
       </main>
     </div>
   );
