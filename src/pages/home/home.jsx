@@ -9,6 +9,7 @@ import Statistics from '../../components/statistics/statistics';
 import Teachres from '../../components/teachers/teachers';
 import Students from '../../components/students/students';
 import Form from '../../components/form/form';
+import Map from '../../components/googlemap/map';
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <Teachres />
         <Students />
         <Form />
+        <Map />
       </main>
     </div>
   );
