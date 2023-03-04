@@ -9,6 +9,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container {

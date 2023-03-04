@@ -6,6 +6,7 @@ import Intro from '../../components/intro/intro';
 import Administration from '../../components/administration/administration';
 import News from '../../components/news/news';
 import Statistics from '../../components/statistics/statistics';
+import Teachres from '../../components/teachers/teachers';
 
 function Home() {
   return (
@@ -17,8 +18,9 @@ function Home() {
       <main>
         <Intro />
         <News />
-        <Administration />
+        {/* <Administration /> */}
         <Statistics />
+        <Teachres />
       </main>
     </div>
   );
