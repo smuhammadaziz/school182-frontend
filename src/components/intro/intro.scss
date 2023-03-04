@@ -9,7 +9,7 @@
 
 .swiper-slide {
   width: 100%;
-  height: 500px;
+  height: 100%;
   text-align: center;
   font-size: 18px;
   padding: 100px 50px;
@@ -24,12 +24,12 @@
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
 
 @media only screen and (max-width: 900px) {
   .intro {
@@ -51,10 +51,10 @@
 
 @media only screen and (max-width: 350px) {
   .intro {
-    margin-top: 65px;
+    // padding: ;
   }
   .swiper {
-    height: 250px;
+    height: 350px;
   }
 
   .swiper-slide {
