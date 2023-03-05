@@ -6,7 +6,7 @@ footer {
 
   bottom: 0px;
 
-  background: #003a5a;
+  background-color: #003a5a;
   .container {
     width: calc(100% - 20%);
     flex-wrap: wrap;
@@ -40,12 +40,10 @@ footer {
       margin-top: 20px;
 
       h5 {
-        // font-family: 'Inter';
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 150.02%;
-        /* identical to box height, or 30px */
         text-align: center;
 
         color: #ffffff;
@@ -103,6 +101,23 @@ footer {
         color: #b5b5b5;
       }
     }
+  }
+}
+
+.footer__down {
+  background-color: #b8b8b8;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer__down__link {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: #003a5a;
   }
 }
 @media only screen and (max-width: 768px) {

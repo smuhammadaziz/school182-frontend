@@ -5,6 +5,7 @@ import gmail from '../../assets/Icon/gmail.png';
 import instagram from '../../assets/Icon/instagram.png';
 import phone from '../../assets/Icon/phone.png';
 import telegram from '../../assets/Icon/telegram.png';
+
 const Footer = () => {
   return (
     <footer>
@@ -34,11 +35,13 @@ const Footer = () => {
             <img src={telegram} alt='' />
             <a href='@school_182'>@school_182</a>
           </li>
-          <li>
-            <img src={instagram} alt='' />
-            <a href='@Neooft'>Made By NEOSOFT</a>
-          </li>
         </ul>
+      </div>
+
+      <div className='footer__down'>
+        <a href='#' className='footer__down__link'>
+          Made by NEOSOFT™️
+        </a>
       </div>
     </footer>
   );
