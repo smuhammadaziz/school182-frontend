@@ -31,6 +31,101 @@
   object-fit: cover;
 }
 
+.intro__heading {
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.intro__p {
+  width: 600px;
+  font-size: 16px;
+  color: white;
+  line-height: 1.3rem;
+  position: relative;
+  top: 0.8rem;
+  opacity: 0;
+  animation: 0.5s swift-up ease-out forwards, 0.5s fade-in ease-out forwards;
+  animation-delay: 0.8s;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.intro__span {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 0.8rem;
+  animation: 0.3s swift-up ease-in-out forwards;
+}
+
+.intro__i {
+  font-style: normal;
+  position: relative;
+  top: 2rem;
+  font-size: 40px;
+  animation: 0.5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0rem;
+  }
+}
+
+.intro__span:nth-of-type(1) .intro__i {
+  animation-delay: 0s;
+}
+
+.intro__span:nth-of-type(2) .intro__i {
+  animation-delay: 0.1s;
+}
+
+.intro__span:nth-of-type(3) .intro__i {
+  animation-delay: 0.2s;
+}
+
+.intro__span:nth-of-type(4) .intro__i {
+  animation-delay: 0.3s;
+}
+
+.intro__span:nth-of-type(5) .intro__i {
+  animation-delay: 0.4s;
+}
+
+.intro__span:nth-of-type(6) .intro__i {
+  animation-delay: 0.5s;
+}
+
+.intro__span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.intro__span:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.intro__span:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+.intro__span:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+
+.intro__span:nth-of-type(5) {
+  animation-delay: 0.4s;
+}
+
+.intro__span:nth-of-type(6) {
+  animation-delay: 0.5s;
+}
+
 @media only screen and (max-width: 900px) {
   .intro {
     margin-top: 90px;
