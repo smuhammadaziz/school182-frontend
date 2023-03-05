@@ -33,8 +33,10 @@ function News() {
                 </NavLink>
               );
             })}
-            <NavLink className='more'>More</NavLink>
           </div>
+          <NavLink className='more' to='/news'>
+            More
+          </NavLink>
         </div>
       </div>
     </>

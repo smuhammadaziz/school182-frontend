@@ -1,3 +1,27 @@
+.more {
+  width: 200px;
+  position: relative;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  padding: 12px 60px;
+  font-size: 20px;
+  background-color: #f88664;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #f88664;
+  transition: all 0.5s ease-in;
+  &:hover {
+    border: 2px solid #f88664;
+    background-color: transparent;
+    color: #f88664;
+  }
+}
+
 .newsPart {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -25,33 +49,6 @@
       'bottom bottom';
     gap: 24px;
     position: relative;
-
-    .more {
-      width: calc(15%);
-      padding: 15px 0;
-      background-color: #f88664;
-      border: 0;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      position: absolute;
-      text-align: center;
-      text-decoration: none;
-      bottom: -8%;
-      left: 43%;
-      font-size: 20px;
-
-      transition: all 0.5s ease-in;
-      // text-transform: uppercase;
-      // font-family: sans-serif;
-      border: 2px solid #f88664;
-
-      &:hover {
-        border: 2px solid #f88664;
-        background-color: transparent;
-        color: #f88664;
-      }
-    }
 
     .newsCard {
       background-size: cover;
