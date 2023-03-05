@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.scss';
 import logo from '../../assets/images/Vector.svg';
-import gmail from '../../assets/Icon/gmail.png';
 import instagram from '../../assets/Icon/instagram.png';
 import phone from '../../assets/Icon/phone.png';
 import telegram from '../../assets/Icon/telegram.png';
