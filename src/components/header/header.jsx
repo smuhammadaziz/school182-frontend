@@ -53,7 +53,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className='header__list__item'>
-              <NavLink to='/' className='header__list__item__link'>
+              <NavLink to='/administration' className='header__list__item__link'>
                 {content[lang].navbar.administration}
               </NavLink>
             </li>
