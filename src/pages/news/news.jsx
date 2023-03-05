@@ -3,6 +3,8 @@ import './news.scss';
 
 //components
 import Header from '../../components/header/header';
+import Teachers from '../../components/teachers/teachers';
+import Footer from '../../components/footer/footer';
 
 function News() {
   return (
@@ -17,7 +19,15 @@ function News() {
             <h2>Новости школы</h2>
           </div>
         </section>
+
+        <section>
+          <Teachers />
+        </section>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
