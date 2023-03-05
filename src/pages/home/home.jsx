@@ -22,10 +22,10 @@ function Home() {
       <main>
         <Intro />
         <News />
-        <Administration />
+        {/* <Administration /> */}
         <Statistics />
         {/* <Teachres /> */}
-        <Students />
+        {/* <Students /> */}
         <Form />
         <Map />
       </main>
