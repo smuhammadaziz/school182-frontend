@@ -105,15 +105,16 @@ footer {
 }
 
 .footer__down {
-  background-color: #b8b8b8;
+  background-color: #046381;
   padding: 10px 0;
   text-align: center;
   margin-top: 20px;
+  color: white;
 }
 
 .footer__down__link {
   list-style-type: none;
-  color: black;
+  color: white;
   text-decoration: none;
 
   &:hover {
