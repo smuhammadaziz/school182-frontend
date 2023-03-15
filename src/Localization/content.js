@@ -16,13 +16,13 @@ const content = {
   },
   uz: {
     navbar: {
-      home: 'bosh sahifa',
-      news: 'yangiliklar',
-      students: 'oquvchilar',
-      teachers: 'ustozlar',
-      contact: 'boglanish',
-      administration: 'maktab mamuriyati',
-      contact_button: 'boglanish',
+      home: 'Бош саҳифа',
+      news: 'Янгиликлар',
+      students: ' Фаол ўқувчилар',
+      teachers: 'Ўқтувчилар',
+      contact: 'Боғланиш',
+      administration: 'Мактаб маъмурияти',
+      contact_button: 'Боғланиш',
     },
     intro: {
       heading:
