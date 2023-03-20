@@ -41,7 +41,7 @@
   width: 600px;
   font-size: 16px;
   color: white;
-  line-height: 1.3rem;
+  // line-height: 1.3rem;
   position: relative;
   top: 0.8rem;
   opacity: 0;
@@ -72,7 +72,7 @@
   font-size: 40px;
   animation: 0.5s swift-up ease-in-out forwards;
   padding-bottom: 10px;
-  line-height: 40px;
+  // line-height: 40px;
 }
 
 @keyframes swift-up {
@@ -148,7 +148,7 @@
 
   .intro__i {
     font-size: 30px;
-    line-height: 40px;
+    // line-height: 40px;
   }
 }
 
@@ -162,7 +162,7 @@
 
   .intro__i {
     font-size: 25px;
-    line-height: 40px;
+    // line-height: 40px;
   }
 }
 
@@ -184,6 +184,6 @@
 
   .intro__i {
     font-size: 20px;
-    line-height: 40px;
+    // line-height: 40px;
   }
 }

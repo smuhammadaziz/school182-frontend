@@ -25,7 +25,7 @@ function Home() {
         {/* <Administration /> */}
         <Statistics />
         {/* <Teachres /> */}
-        {/* <Students /> */}
+        <Students />
         <Form />
         <Map />
       </main>

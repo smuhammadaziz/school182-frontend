@@ -13,7 +13,7 @@ import Hamburger from 'hamburger-react';
 const Header = () => {
   const elNavbar = useRef(null);
   const elNavbarr = useRef(null);
-  const [lang, setLang] = useLang('uz');
+  const [lang, setLang] = useLang('ru');
   const [isOpen, setOpen] = useState(false);
 
   const selectedValue = value => {
@@ -55,6 +55,11 @@ const Header = () => {
             <li className='header__list__item'>
               <NavLink to='/administration' className='header__list__item__link'>
                 {content[lang].navbar.administration}
+              </NavLink>
+            </li>
+            <li className='header__list__item'>
+              <NavLink to='/administration' className='header__list__item__link'>
+                {content[lang].navbar.teachers}
               </NavLink>
             </li>
           </ul>

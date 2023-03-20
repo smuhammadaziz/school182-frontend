@@ -12,7 +12,11 @@ import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
+
 function Intro() {
+  const [lang] = useLang('ru');
   useEffect(() => {
     AOS.init();
   });
@@ -39,16 +43,10 @@ function Intro() {
               <i className='intro__i'></i>
             </span>
             <span className='intro__span'>
-              <i className='intro__i'>
-                Посмотрите видео чтоб узнать больше о нашей школе{' '}
-              </i>
+              <i className='intro__i'>{content[lang].intro.heading}</i>
             </span>
           </h1>
-          <p className='intro__p'>
-            Create, prototype, collaborate, and bring your ideas to life with the design
-            platform used by over one million people — from freelancers, to the world’s
-            largest teams.
-          </p>
+          <p className='intro__p'>{content[lang].intro.text}</p>
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='intro__heading'>
@@ -56,16 +54,10 @@ function Intro() {
               <i className='intro__i'></i>
             </span>
             <span className='intro__span'>
-              <i className='intro__i'>
-                Посмотрите видео чтоб узнать больше о нашей школе{' '}
-              </i>
+              <i className='intro__i'>{content[lang].intro.heading}</i>
             </span>
           </h1>
-          <p className='intro__p'>
-            Create, prototype, collaborate, and bring your ideas to life with the design
-            platform used by over one million people — from freelancers, to the world’s
-            largest teams.
-          </p>
+          <p className='intro__p'>{content[lang].intro.text}</p>
         </SwiperSlide>
       </Swiper>
     </div>

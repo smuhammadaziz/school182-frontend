@@ -7,11 +7,11 @@ const content = {
       teachers: 'Учителя',
       contact: 'Контакты',
       administration: 'Администрация',
-      contact_button: 'contact us',
+      contact_button: 'Контакт',
     },
     intro: {
-      heading:
-        'Лорем,  ипсум долор сит амет cонсеcтетур адиписиcинг элит.  Cулпа одио ут махиме плаcеат либеро аccусамус. ',
+      heading: 'Добро пожаловать в общеобразовательную среднюю школу № 182.',
+      text: 'Общеобразовательная средняя школа №182, расположенная в городе Ташкенте, Республика Узбекистан.',
     },
   },
   uz: {
@@ -25,8 +25,8 @@ const content = {
       contact_button: 'Боғланиш',
     },
     intro: {
-      heading:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa odio ut maxime placeat libero accusamus.',
+      heading: '182-сонли умумий ўрта таълим мактабига ҳуш келибсиз. ',
+      text: 'Ўзбекистон Республикаси Тошкент шахрида жойлашган 182-сонли умумий ўрта таълим мактаби.',
     },
   },
 };
