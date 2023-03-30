@@ -23,6 +23,13 @@ const Header = () => {
   const handleChangeSwitcher = e => {
     selectedValue(e.target.value);
   };
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='header'>
       <div className='container  header__wrapper'>
@@ -37,28 +44,40 @@ const Header = () => {
         <nav className='header__navbar' ref={elNavbar}>
           <ul className='header__list'>
             <li className='header__list__item'>
-              <NavLink to='/' className='header__list__item__link'>
+              <NavLink to='/' className='header__list__item__link' onClick={goToTop}>
                 {content[lang].navbar.home}
               </NavLink>
             </li>
             <li className='header__list__item'>
-              <NavLink to='/news' className='header__list__item__link'>
+              <NavLink to='/news' className='header__list__item__link' onClick={goToTop}>
                 {content[lang].navbar.news}
               </NavLink>
             </li>
 
             <li className='header__list__item'>
-              <NavLink to='/contact' className='header__list__item__link'>
+              <NavLink
+                to='/contact'
+                className='header__list__item__link'
+                onClick={goToTop}
+              >
                 {content[lang].navbar.contact}
               </NavLink>
             </li>
             <li className='header__list__item'>
-              <NavLink to='/administration' className='header__list__item__link'>
+              <NavLink
+                to='/administration'
+                className='header__list__item__link'
+                onClick={goToTop}
+              >
                 {content[lang].navbar.administration}
               </NavLink>
             </li>
             <li className='header__list__item'>
-              <NavLink to='/administration' className='header__list__item__link'>
+              <NavLink
+                to='/administration'
+                className='header__list__item__link'
+                onClick={goToTop}
+              >
                 {content[lang].navbar.teachers}
               </NavLink>
             </li>
@@ -78,9 +97,9 @@ const Header = () => {
         </div>
 
         <div className='header__btn' ref={elNavbarr}>
-          <button className='header__button'>
+          <a href='#site-form' className='header__button'>
             {content[lang].navbar.contact_button}
-          </button>
+          </a>
         </div>
 
         <div className='header__hamburger'>

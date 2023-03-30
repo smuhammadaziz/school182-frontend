@@ -15,7 +15,7 @@ import Footer from '../../components/footer/footer';
 function Home() {
   return (
     <div>
-      <header>
+      <header id='site-header'>
         <Header />
       </header>
 
@@ -26,7 +26,9 @@ function Home() {
         <Statistics />
         {/* <Teachres /> */}
         <Students />
-        <Form />
+        <section id='site-form'>
+          <Form />
+        </section>
         <Map />
       </main>
 

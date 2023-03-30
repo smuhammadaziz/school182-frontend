@@ -12,6 +12,13 @@ function News() {
     AOS.init();
   });
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className='newsPart'>
@@ -34,7 +41,7 @@ function News() {
               );
             })}
           </div>
-          <NavLink className='more' to='/news'>
+          <NavLink className='more' to='/news' onClick={goToTop}>
             More
           </NavLink>
         </div>
