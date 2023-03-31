@@ -41,14 +41,14 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className='footer__down'>
+      <div className='footer__down' style={{ display: 'flex', flexDirection: 'column' }}>
         <a href='#' className='footer__down__link'>
           {content[lang].neosoft.made}
         </a>
         <a
           href='tel:998900291088'
           className='footer__down__link'
-          style={{ marginLeft: '20px' }}
+          style={{ marginTop: '10px' }}
         >
           +998 (90) 029 10 88
         </a>
