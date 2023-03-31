@@ -116,9 +116,11 @@ footer {
   list-style-type: none;
   color: white;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  // margin: 5px;
 
   &:hover {
-    color: #003a5a;
+    color: #dddddd;
   }
 }
 

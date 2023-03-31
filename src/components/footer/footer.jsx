@@ -50,7 +50,7 @@ const Footer = () => {
           className='footer__down__link'
           style={{ marginTop: '10px' }}
         >
-          +998 (90) 029 10 88
+          Тел: +998 (90) 029 10 88
         </a>
       </div>
     </footer>
