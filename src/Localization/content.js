@@ -23,6 +23,13 @@ const content = {
       winner: 'призер олимпиад',
       graduated: 'Те, кто вошел в ОТМ',
     },
+    students: {
+      heading: 'Лучшие ученики школы',
+      text1: 'Ученик',
+      text2: 'класса',
+      teacher: 'классний руководител',
+      more: 'Более',
+    },
   },
   uz: {
     navbar: {
@@ -47,6 +54,13 @@ const content = {
       students: 'ўқувчилар',
       winner: 'oлимпиада совриндори',
       graduated: 'ОТМга кирганлар',
+    },
+    students: {
+      heading: 'Мактабнинг фаол ўқувчилари',
+      text1: '',
+      text2: 'синф ўқувчиси',
+      teacher: 'синф раҳбари',
+      more: 'Кўпроқ',
     },
   },
 };

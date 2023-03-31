@@ -6,8 +6,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { NavLink } from 'react-router-dom';
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
 
 const Students = () => {
+  const [lang] = useLang('ru');
   const datas = data.slice(0, 6);
   useEffect(() => {
     AOS.init();
@@ -22,7 +25,7 @@ const Students = () => {
   return (
     <div className='activepupils'>
       <div className='container'>
-        <h1 className='sarlavha'>Лучшие ученики школы</h1>
+        <h1 className='sarlavha'>{content[lang].students.heading}</h1>
         <div className='cards'>
           {datas.map(e => {
             return (
@@ -33,14 +36,17 @@ const Students = () => {
                     {e.name} {e.surname} <br /> {e.fathername}
                   </h4>
                   <br />
-                  <p>Ученик {e.class} класса</p>
+                  <p>
+                    {content[lang].students.text1} {e.class}{' '}
+                    {content[lang].students.text2}
+                  </p>
                   <br />
                   <p className='blue' style={{ fontWeight: 700 }}>
-                    классний руководител
+                    {content[lang].students.teacher}
                   </p>
                   <br />
                   <p>
-                    {e.teachener_name} {e.teachener_surname} классного руководителя
+                    {e.teachener_name} {e.teachener_surname}
                   </p>
                 </div>
               </div>
@@ -48,7 +54,7 @@ const Students = () => {
           })}
         </div>
         <NavLink className='more students__morebtn' to='/news' onClick={goToTop}>
-          More
+          {content[lang].students.more}
         </NavLink>
       </div>
     </div>
