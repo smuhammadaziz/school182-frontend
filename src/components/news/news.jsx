@@ -6,7 +6,11 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
+
 function News() {
+  const [lang] = useLang('ru');
   const ShortNews = SchoolNews.reverse().slice(0, 4);
   useEffect(() => {
     AOS.init();
@@ -23,7 +27,7 @@ function News() {
     <>
       <div className='newsPart'>
         <div className='container'>
-          <h2 className='NewsHeading'>Новости школы</h2>
+          <h2 className='NewsHeading'>{content[lang].news.heading}</h2>
           <div className='newsGridContainer'>
             {ShortNews.map(e => {
               return (
