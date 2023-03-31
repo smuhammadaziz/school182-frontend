@@ -5,7 +5,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
+
 function Statistics() {
+  const [lang] = useLang('ru');
   function Number({ n }) {
     const { number } = useSpring({
       from: { number: 0 },
@@ -34,9 +38,9 @@ function Statistics() {
               data-aos-delay='50'
             >
               <strong className='StatNumber'>
-                <Number n={60} />+
+                <Number n={65} />+
               </strong>
-              <p className='StatType'>высококволифицированных учителей</p>
+              <p className='StatType'>{content[lang].stats.teachers}</p>
             </div>
             <div
               className='StatCard'
@@ -45,9 +49,9 @@ function Statistics() {
               data-aos-delay='50'
             >
               <strong className='StatNumber'>
-                <Number n={700} />+
+                <Number n={1300} />+
               </strong>
-              <p className='StatType'>учеников</p>
+              <p className='StatType'>{content[lang].stats.students}</p>
             </div>
             <div
               className='StatCard'
@@ -58,7 +62,7 @@ function Statistics() {
               <strong className='StatNumber'>
                 <Number n={25} />
               </strong>
-              <p className='StatType'>призер олимпиад</p>
+              <p className='StatType'>{content[lang].stats.winner}</p>
             </div>
             <div
               className='StatCard'
@@ -67,9 +71,9 @@ function Statistics() {
               data-aos-delay='50'
             >
               <strong className='StatNumber'>
-                <Number n={99} />%
+                <Number n={80} />%
               </strong>
-              <p className='StatType'>Довольных родителей</p>
+              <p className='StatType'>{content[lang].stats.graduated}</p>
             </div>
           </div>
         </div>

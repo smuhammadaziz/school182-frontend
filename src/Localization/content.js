@@ -17,6 +17,12 @@ const content = {
       heading: 'Новости школы',
       more: 'Более',
     },
+    stats: {
+      teachers: 'Преподавательский состав',
+      students: 'учеников',
+      winner: 'призер олимпиад',
+      graduated: 'Те, кто вошел в ОТМ',
+    },
   },
   uz: {
     navbar: {
@@ -35,6 +41,12 @@ const content = {
     news: {
       heading: 'Мактаб янгиликлари',
       more: 'Кўпроқ',
+    },
+    stats: {
+      teachers: 'Педагогик ходимлар',
+      students: 'ўқувчилар',
+      winner: 'oлимпиада совриндори',
+      graduated: 'ОТМга кирганлар',
     },
   },
 };
