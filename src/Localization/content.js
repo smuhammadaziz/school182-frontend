@@ -15,6 +15,7 @@ const content = {
     },
     news: {
       heading: 'Новости школы',
+      more: 'Более',
     },
   },
   uz: {
@@ -33,6 +34,7 @@ const content = {
     },
     news: {
       heading: 'Мактаб янгиликлари',
+      more: 'Кўпроқ',
     },
   },
 };

@@ -46,7 +46,7 @@ function News() {
             })}
           </div>
           <NavLink className='more' to='/news' onClick={goToTop}>
-            More
+            {content[lang].news.more}
           </NavLink>
         </div>
       </div>
