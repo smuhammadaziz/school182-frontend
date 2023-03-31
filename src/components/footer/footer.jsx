@@ -25,7 +25,6 @@ const Footer = () => {
         </div>
         <ul className='sotsial'>
           <h5>{content[lang].footer.social}</h5>
-
           <li>
             <img src={instagram} alt='' />
             <a href='@school_182'>@school_182</a>
