@@ -75,13 +75,9 @@
   }
 }
 
-.students__morebtn {
-  margin-top: 30px;
-}
-
 @media only screen and (max-width: 1144px) {
   .activepupils {
-    margin-bottom: 1100px;
+    // margin-bottom: 1100px;
     .container {
       .cards {
         display: flex !important;
@@ -98,11 +94,15 @@
       }
     }
   }
+
+  .students__morebtn {
+    margin-top: 2650px;
+  }
 }
 
 @media only screen and (max-width: 621px) {
   .activepupils {
-    margin-bottom: 2300px;
+    // margin-bottom: 2300px;
     .container {
       .cards {
         display: flex !important;
@@ -125,7 +125,7 @@
 }
 @media only screen and (max-width: 540px) {
   .activepupils {
-    margin-bottom: 2500px;
+    // margin-bottom: 2500px;
     .container {
       .cards {
         display: flex !important;
@@ -171,7 +171,7 @@
 @media only screen and (max-width: 340px) {
   .activepupils {
     .container {
-      margin-bottom: 2850px;
+      // margin-bottom: 2850px;
       .cards {
         display: flex !important;
         flex-direction: column;
