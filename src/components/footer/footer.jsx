@@ -5,7 +5,11 @@ import instagram from '../../assets/Icon/instagram.png';
 import phone from '../../assets/Icon/phone.png';
 import telegram from '../../assets/Icon/telegram.png';
 
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
+
 const Footer = () => {
+  const [lang] = useLang('ru');
   return (
     <footer>
       <div className='container'>
@@ -14,13 +18,13 @@ const Footer = () => {
         </div>
 
         <div className='mesto'>
-          <h5>Местоположение</h5>
+          <h5>{content[lang].footer.location}</h5>
           <pre>
             г. Ташкент, <br /> Мирабадский район, <br /> проспект Амира <br /> темура 33
           </pre>
         </div>
         <ul className='sotsial'>
-          <h5>Мы в соцсетях</h5>
+          <h5>{content[lang].footer.social}</h5>
 
           <li>
             <img src={instagram} alt='' />
@@ -39,7 +43,14 @@ const Footer = () => {
 
       <div className='footer__down'>
         <a href='#' className='footer__down__link'>
-          Made by NEOSOFT™️
+          {content[lang].neosoft.made}
+        </a>
+        <a
+          href='tel:998900291088'
+          className='footer__down__link'
+          style={{ marginLeft: '20px' }}
+        >
+          +998 (90) 029 10 88
         </a>
       </div>
     </footer>

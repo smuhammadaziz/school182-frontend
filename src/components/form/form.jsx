@@ -1,41 +1,44 @@
 import React from 'react';
 import './style.scss';
 import { useState } from 'react';
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
 
 const Form = () => {
+  const [lang] = useLang('ru');
   const [value, setValue] = useState('');
   return (
     <div className='forms'>
       <div className='container'>
         <h1 className='blue sarlavha2' style={{ padding: '50px' }}>
-          Есть какие-то вопросы ?
+          {content[lang].form.heading}
         </h1>
         <form action='Post'>
           <div className='inputs'>
             <div className='input'>
-              <p>и.ф.о</p>
+              <p>{content[lang].form.fio}</p>
               <input
                 type='text'
-                placeholder='full name'
+                placeholder={content[lang].form.fio}
                 onChange={e => {
                   setValue(e.target.value);
                 }}
               />
             </div>
             <div className='input'>
-              <p>номер телефона</p>
-              <input type='number' placeholder='number' />
+              <p>{content[lang].form.phone}</p>
+              <input type='number' placeholder={content[lang].form.phone} />
             </div>
             <div className='input'>
-              <p>электронная почта</p>
-              <input type='email' placeholder='email' />
+              <p>{content[lang].form.email}</p>
+              <input type='email' placeholder={content[lang].form.email} />
             </div>
           </div>
           <div className='textarea'>
-            <p>оставить коментарий</p>
+            <p>{content[lang].form.comment}</p>
             <textarea name='' id='input' cols='30' rows='10'></textarea>
 
-            <button type='submit'>Submit</button>
+            <button type='submit'>{content[lang].form.send}</button>
           </div>
         </form>
       </div>
