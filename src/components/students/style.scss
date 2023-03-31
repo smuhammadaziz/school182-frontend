@@ -157,7 +157,13 @@
 
 @media only screen and (max-width: 530px) {
   .students__morebtn {
-    margin-top: 1900px;
+    margin-top: 2250px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .students__morebtn {
+    margin-top: 2300px;
   }
 }
 @media only screen and (max-width: 391px) {
@@ -181,7 +187,13 @@
     }
   }
   .students__morebtn {
-    margin-top: 2400px;
+    margin-top: 2300px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .students__morebtn {
+    margin-top: 2350px;
   }
 }
 
@@ -205,6 +217,6 @@
     }
   }
   .students__morebtn {
-    margin-top: 2650px;
+    margin-top: 2300px;
   }
 }
