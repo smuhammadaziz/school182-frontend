@@ -5,11 +5,20 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { NavLink } from 'react-router-dom';
+
 const Students = () => {
   const datas = data.slice(0, 6);
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='activepupils'>
       <div className='container'>
@@ -37,9 +46,10 @@ const Students = () => {
               </div>
             );
           })}
-
-          {/* <button className='btn1'>Click</button> */}
         </div>
+        <NavLink className='more students__morebtn' to='/news' onClick={goToTop}>
+          More
+        </NavLink>
       </div>
     </div>
   );
