@@ -72,7 +72,6 @@
   font-size: 40px;
   animation: 0.5s swift-up ease-in-out forwards;
   padding-bottom: 10px;
-  // line-height: 40px;
 }
 
 @keyframes swift-up {
@@ -148,7 +147,8 @@
 
   .intro__i {
     font-size: 30px;
-    // line-height: 40px;
+    top: 1em;
+    line-height: 8px;
   }
 }
 
@@ -162,11 +162,12 @@
 
   .intro__i {
     font-size: 25px;
-    // line-height: 40px;
+    top: 1em;
+    line-height: 8px;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 361px) {
   .intro {
     // padding: ;
   }
@@ -183,7 +184,8 @@
   }
 
   .intro__i {
+    top: 1em;
     font-size: 20px;
-    // line-height: 40px;
+    line-height: 8px;
   }
 }
