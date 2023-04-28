@@ -36,7 +36,7 @@ const Header = () => {
         <div className='header__logo'>
           <NavLink to='/' className='header__logo__link'>
             <p className='header__logo__text'>
-              <img src={logo} alt='182 maktab logo maktab logo' width='115' height='53' />
+              <img src={logo} alt='Школа 182 toshkent' width='115' height='53' />
             </p>
           </NavLink>
         </div>
