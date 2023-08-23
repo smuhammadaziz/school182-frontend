@@ -17,7 +17,6 @@ function Teachres() {
     <>
       <div className='TeachersPart'>
         <div className='container'>
-          <h2 className='TeachersHeaidng'>Лучшие учителя школы</h2>
           <div className='Teacherscards'>
             {ShortData.map(e => {
               return (

@@ -8,6 +8,7 @@ import Home from './pages/home/home';
 import Contact from './pages/contact/contact';
 import Admins from './pages/admins/admins';
 import News from './pages/news/news';
+import Teachers from './pages/teachers/teachers';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/students' element={<Contact />} />
-        <Route path='/teachers' element={<Contact />} />
+        <Route path='/teachers' element={<Teachers />} />
         <Route path='/administration' element={<Admins />} />
         <Route path='/news' element={<News />} />
       </Routes>

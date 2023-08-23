@@ -15,7 +15,6 @@ function Administration() {
     <>
       <div className='admins'>
         <div className='container'>
-          <h2 className='section_heading'>Администрация школы</h2>
           <div className='adminsWrapper'>
             {shortAmdins.map(e => {
               return (
