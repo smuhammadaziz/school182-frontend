@@ -23,43 +23,45 @@ function Intro() {
 
   return (
     <div className='intro'>
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        loop={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-        className='mySwiper'
-      >
-        <SwiperSlide>
-          <h1 className='intro__heading'>
-            <span className='intro__span'>
-              <i className='intro__i'></i>
-            </span>
-            <span className='intro__span'>
-              <i className='intro__i'>{content[lang].intro.heading}</i>
-            </span>
-          </h1>
-          <p className='intro__p'>{content[lang].intro.text}</p>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1 className='intro__heading'>
-            <span className='intro__span'>
-              <i className='intro__i'></i>
-            </span>
-            <span className='intro__span'>
-              <i className='intro__i'>{content[lang].intro.heading}</i>
-            </span>
-          </h1>
-          <p className='intro__p'>{content[lang].intro.text}</p>
-        </SwiperSlide>
-      </Swiper>
+      <div className='container'>
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          loop={true}
+          autoplay={{
+            delay: 11111,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+          className='mySwiper'
+        >
+          <SwiperSlide>
+            <h1 className='intro__heading'>
+              <span className='intro__span'>
+                <i className='intro__i'></i>
+              </span>
+              <span className='intro__span'>
+                <i className='intro__i'>{content[lang].intro.heading}</i>
+              </span>
+            </h1>
+            <p className='intro__p'>{content[lang].intro.text}</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <h1 className='intro__heading'>
+              <span className='intro__span'>
+                <i className='intro__i'></i>
+              </span>
+              <span className='intro__span'>
+                <i className='intro__i'>{content[lang].intro.heading}</i>
+              </span>
+            </h1>
+            <p className='intro__p'>{content[lang].intro.text}</p>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 }
