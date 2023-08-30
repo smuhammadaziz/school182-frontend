@@ -30,6 +30,7 @@ function Statistics() {
     <>
       <div className='StatisticsPart'>
         <div className='container'>
+          <h1 className='statistics_heading'>{content[lang].stats.heading}</h1>
           <div className='StatCardsWrapper'>
             <div
               className='StatCard'

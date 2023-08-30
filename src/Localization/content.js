@@ -22,6 +22,7 @@ const content = {
       students: 'учеников',
       winner: 'призер олимпиад',
       graduated: 'Те, кто вошел в ОТМ',
+      heading: 'Статистика',
     },
     students: {
       heading: 'Лучшие ученики школы',
@@ -69,6 +70,7 @@ const content = {
       students: 'ўқувчилар',
       winner: 'oлимпиада совриндори',
       graduated: 'ОТМга кирганлар',
+      heading: 'Statistika',
     },
     students: {
       heading: 'Мактабнинг фаол ўқувчилари',
