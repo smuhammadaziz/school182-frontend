@@ -80,6 +80,11 @@
   align-items: center;
 }
 
+.header__btnn {
+  display: none;
+  align-items: center;
+}
+
 .header__button {
   padding: 12px 40px;
   font-size: 17px;
@@ -99,6 +104,17 @@
   border: 2px solid #003a5a;
   color: #003a5a;
   background-color: #fff;
+}
+
+.header_login_btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #003a5a;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: underline;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
 .header__language {
@@ -130,9 +146,16 @@
 .header__hamburger {
   display: none;
 }
+.header__list .nav__header_btn {
+  display: none;
+}
 
 @media only screen and (max-width: 1160px) {
   .header__navbar {
+    display: none;
+  }
+
+  .header_bottom_btn {
     display: none;
   }
 
@@ -149,6 +172,9 @@
     margin-top: 82px;
     z-index: 1000px;
   }
+  .nav__header_btn {
+    display: block;
+  }
 
   .header__list__item__link {
     color: white;
@@ -162,17 +188,35 @@
     margin-top: 70px;
   }
 
-  .header__btn {
-    display: none;
-    // position: absolute;
+  .header__btnn {
+    position: absolute;
+    top: 550%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
+    text-align: center;
   }
 
   .header__button {
-    font-size: 16px;
-    background-color: #f88664;
+    font-size: 20px;
+    background-color: white;
     padding: 15px 30px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
     // position: absolute;
+  }
+
+  .header_login_btn {
+    font-size: 20px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
   }
 
   .header__hamburger {

@@ -8,6 +8,7 @@ const content = {
       contact: 'Контакты',
       administration: 'Администрация',
       contact_button: 'Контакт',
+      about: 'Про школу',
     },
     intro: {
       heading: 'Добро пожаловать в общеобразовательную среднюю школу № 182.',
@@ -56,6 +57,7 @@ const content = {
       contact: 'Боғланиш',
       administration: 'Мактаб маъмурияти',
       contact_button: 'Боғланиш',
+      about: 'Мактаб ҳақида',
     },
     intro: {
       heading: '182-сонли умумий ўрта таълим мактабига ҳуш келибсиз. ',

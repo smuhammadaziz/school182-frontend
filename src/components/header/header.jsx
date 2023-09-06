@@ -53,16 +53,6 @@ const Header = () => {
                 {content[lang].navbar.news}
               </NavLink>
             </li>
-
-            <li className='header__list__item'>
-              <NavLink
-                to='/contact'
-                className='header__list__item__link'
-                onClick={goToTop}
-              >
-                {content[lang].navbar.contact}
-              </NavLink>
-            </li>
             <li className='header__list__item'>
               <NavLink
                 to='/administration'
@@ -81,6 +71,29 @@ const Header = () => {
                 {content[lang].navbar.teachers}
               </NavLink>
             </li>
+            <li className='header__list__item'>
+              <NavLink
+                to='/teachers'
+                className='header__list__item__link'
+                onClick={goToTop}
+              >
+                {content[lang].navbar.about}
+              </NavLink>
+            </li>
+            <li className='header__list__item'>
+              <div className='header__btnn nav__header_btn'>
+                <a
+                  href='https://182maktab.uz'
+                  target='_blank'
+                  className=' header_login_btn'
+                >
+                  Login
+                </a>
+                <NavLink to='/contact' className=' header__button' onClick={goToTop}>
+                  {content[lang].navbar.contact}
+                </NavLink>
+              </div>
+            </li>
           </ul>
         </nav>
 
@@ -96,10 +109,13 @@ const Header = () => {
           </select>
         </div>
 
-        <div className='header__btn' ref={elNavbarr}>
-          <a href='#site-form' className='header__button'>
-            {content[lang].navbar.contact_button}
+        <div className='header__btn header_bottom_btn'>
+          <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
+            Login
           </a>
+          <NavLink to='/contact' className=' header__button' onClick={goToTop}>
+            {content[lang].navbar.contact}
+          </NavLink>
         </div>
 
         <div className='header__hamburger'>

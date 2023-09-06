@@ -21,9 +21,9 @@ function Home() {
 
       <main>
         <Intro />
+        <Statistics />
         <News />
         {/* <Administration /> */}
-        <Statistics />
         {/* <Teachres /> */}
         <Students />
         <section id='site-form'>
