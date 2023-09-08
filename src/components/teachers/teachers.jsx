@@ -17,6 +17,7 @@ function Teachres() {
     <>
       <div className='TeachersPart'>
         <div className='container'>
+          <h1 className='sarlavha'>Eng yaxshi ustozlar</h1>
           <div className='Teacherscards'>
             {ShortData.map(e => {
               return (
@@ -36,7 +37,7 @@ function Teachres() {
               );
             })}
           </div>
-          <NavLink className='more'>More</NavLink>
+          {/* <NavLink className='more'>koproq</NavLink> */}
         </div>
       </div>
     </>

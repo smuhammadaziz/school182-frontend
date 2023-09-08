@@ -63,12 +63,8 @@ const Header = () => {
               </NavLink>
             </li>
             <li className='header__list__item'>
-              <NavLink
-                to='/teachers'
-                className='header__list__item__link'
-                onClick={goToTop}
-              >
-                {content[lang].navbar.teachers}
+              <NavLink to='/about' className='header__list__item__link' onClick={goToTop}>
+                {content[lang].navbar.about}
               </NavLink>
             </li>
             {/* <li className='header__list__item'>

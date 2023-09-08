@@ -10,25 +10,30 @@
     margin: 60px 0 80px 0;
     text-align: center;
   }
+  .sarlavha {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #003a5a;
+  }
 
   .more {
-    width: calc(15%);
+    // width: calc(15%);
     padding: 15px 0;
     background-color: #f88664;
     border: 0;
     border-radius: 5px;
+    margin: 0 auto;
+    display: inline;
+
     color: #fff;
     cursor: pointer;
     position: absolute;
     text-align: center;
     text-decoration: none;
     border: 2px solid #f88664;
-    // top: -8%;
-    left: 43%;
     font-size: 20px;
     transition: all 0.5s ease-in;
     text-transform: uppercase;
-    // font-family: sans-serif;
     border: 2px solid #f88664;
 
     &:hover {
@@ -39,22 +44,23 @@
   }
 
   .Teacherscards {
-    width: 100%;
+    // width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
     .TeachersData {
       background: #ffffff;
       box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-      width: 392px;
+      width: 300px;
       padding: 20px;
       margin-bottom: 24px;
-      border-radius: 14px;
+      border-radius: 10px;
+      margin: 5px;
 
       .TeacherPhoto {
-        width: 352px;
+        width: 260px;
         height: 354px;
         object-fit: cover;
       }
