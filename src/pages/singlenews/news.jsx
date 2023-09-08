@@ -1,12 +1,12 @@
 import React from 'react';
+
 import './news.scss';
 
-//components
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-import AllNews from '../../components/allnews/news';
+import SingleNews from '../../components/onenews/news';
 
-function News() {
+function SingleNewsPage() {
   return (
     <div className='news__page'>
       <header>
@@ -16,12 +16,12 @@ function News() {
       <main className='news__main'>
         <section>
           <div className='contact__main__heading'>
-            <h2>Новости школы</h2>
+            <h2>Title</h2>
           </div>
         </section>
 
         <section>
-          <AllNews />
+          <SingleNews />
         </section>
       </main>
 
@@ -32,4 +32,4 @@ function News() {
   );
 }
 
-export default News;
+export default SingleNewsPage;

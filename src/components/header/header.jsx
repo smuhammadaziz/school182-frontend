@@ -71,7 +71,7 @@ const Header = () => {
                 {content[lang].navbar.teachers}
               </NavLink>
             </li>
-            <li className='header__list__item'>
+            {/* <li className='header__list__item'>
               <NavLink
                 to='/teachers'
                 className='header__list__item__link'
@@ -79,7 +79,7 @@ const Header = () => {
               >
                 {content[lang].navbar.about}
               </NavLink>
-            </li>
+            </li> */}
             <li className='header__list__item'>
               <div className='header__btnn nav__header_btn'>
                 <a
