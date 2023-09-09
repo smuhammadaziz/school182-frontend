@@ -13,6 +13,13 @@ function AllNews() {
     AOS.init();
   });
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className='admins'>
@@ -27,6 +34,7 @@ function AllNews() {
                   data-aos-duration='1000'
                   data-aos-delay='50'
                   to='/news/1'
+                  onClick={goToTop}
                 >
                   <img src={e.img} className='AdminPhoto' alt='' />
                   <div className='AdminSubs'>

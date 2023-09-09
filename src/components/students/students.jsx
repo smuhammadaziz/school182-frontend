@@ -22,6 +22,7 @@ const Students = () => {
       behavior: 'smooth',
     });
   };
+
   return (
     <div className='activepupils'>
       <div className='container'>

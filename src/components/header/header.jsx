@@ -10,6 +10,8 @@ import logo from '../../assets/images/logo.svg';
 
 import Hamburger from 'hamburger-react';
 
+import { AiOutlineCaretDown } from 'react-icons/ai';
+
 const Header = () => {
   const elNavbar = useRef(null);
   const elNavbarr = useRef(null);
@@ -53,29 +55,75 @@ const Header = () => {
                 {content[lang].navbar.news}
               </NavLink>
             </li>
-            <li className='header__list__item'>
-              <NavLink
-                to='/administration'
-                className='header__list__item__link'
-                onClick={goToTop}
-              >
-                {content[lang].navbar.administration}
-              </NavLink>
+            <li className='header__list__item header__list__nest_active'>
+              <p className='header__list__item__link'>
+                Maktab hayoti <AiOutlineCaretDown />
+              </p>
+              <ul className='header__list__nest'>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/news'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.news}
+                  </NavLink>
+                </li>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/about'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.students}
+                  </NavLink>
+                </li>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/about'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.contact}
+                  </NavLink>
+                </li>
+              </ul>
             </li>
-            <li className='header__list__item'>
-              <NavLink to='/about' className='header__list__item__link' onClick={goToTop}>
-                {content[lang].navbar.about}
-              </NavLink>
+            <li className='header__list__item header__list__nest_active'>
+              <p className='header__list__item__link'>
+                Xodimlar
+                <AiOutlineCaretDown />
+              </p>
+              <ul className='header__list__nest'>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/administration'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.administration}
+                  </NavLink>
+                </li>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/about'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.teachers}
+                  </NavLink>
+                </li>
+                <li className='header__nest__item'>
+                  <NavLink
+                    to='/about'
+                    className='header__list__item__link'
+                    onClick={goToTop}
+                  >
+                    {content[lang].navbar.students}
+                  </NavLink>
+                </li>
+              </ul>
             </li>
-            {/* <li className='header__list__item'>
-              <NavLink
-                to='/teachers'
-                className='header__list__item__link'
-                onClick={goToTop}
-              >
-                {content[lang].navbar.about}
-              </NavLink>
-            </li> */}
             <li className='header__list__item'>
               <div className='header__btnn nav__header_btn'>
                 <a
