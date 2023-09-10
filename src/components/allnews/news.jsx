@@ -5,6 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+import photos from '../../assets/images/111.jpeg';
+
 import { NavLink } from 'react-router-dom';
 
 function AllNews() {
@@ -35,10 +37,10 @@ function AllNews() {
                   to='/news/1'
                   onClick={goToTop}
                 >
-                  <img src={e.img} className='AdminPhoto' alt='' />
+                  <img src={photos} className='AdminPhoto' alt='' />
                   <div className='AdminSubs'>
                     <strong className='AdminName'>Title</strong>
-                    <p className='AdminPosition'>Yangilik desc </p>
+                    {/* <p className='AdminPosition'>Yangilik desc </p> */}
                   </div>
                 </NavLink>
               );
