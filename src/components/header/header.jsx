@@ -50,14 +50,9 @@ const Header = () => {
                 {content[lang].navbar.home}
               </NavLink>
             </li>
-            <li className='header__list__item'>
-              <NavLink to='/news' className='header__list__item__link' onClick={goToTop}>
-                {content[lang].navbar.news}
-              </NavLink>
-            </li>
             <li className='header__list__item header__list__nest_active'>
               <p className='header__list__item__link'>
-                Maktab hayoti <AiOutlineCaretDown />
+                {content[lang].navbar.school} <AiOutlineCaretDown />
               </p>
               <ul className='header__list__nest'>
                 <li className='header__nest__item'>
@@ -71,11 +66,11 @@ const Header = () => {
                 </li>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/about'
+                    to='/news'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >
-                    {content[lang].navbar.students}
+                    {content[lang].navbar.about}
                   </NavLink>
                 </li>
                 <li className='header__nest__item'>
@@ -84,14 +79,14 @@ const Header = () => {
                     className='header__list__item__link'
                     onClick={goToTop}
                   >
-                    {content[lang].navbar.contact}
+                    {content[lang].navbar.students}
                   </NavLink>
                 </li>
               </ul>
             </li>
             <li className='header__list__item header__list__nest_active'>
               <p className='header__list__item__link'>
-                Xodimlar
+                {content[lang].navbar.xodim}
                 <AiOutlineCaretDown />
               </p>
               <ul className='header__list__nest'>
@@ -113,30 +108,33 @@ const Header = () => {
                     {content[lang].navbar.teachers}
                   </NavLink>
                 </li>
+              </ul>
+            </li>
+            <li className='header__list__item header__list__nest_active'>
+              <p className='header__list__item__link'>
+                {content[lang].navbar.kontakt}
+                <AiOutlineCaretDown />
+              </p>
+              <ul className='header__list__nest'>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/about'
+                    to='/administration'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >
-                    {content[lang].navbar.students}
+                    {content[lang].navbar.contact}
                   </NavLink>
                 </li>
+                <li className='header__nest__item'>
+                  <a
+                    href='https://182maktab.uz'
+                    target='_blank'
+                    className=' header__list__item__link'
+                  >
+                    {content[lang].navbar.kirish}
+                  </a>
+                </li>
               </ul>
-            </li>
-            <li className='header__list__item'>
-              <div className='header__btnn nav__header_btn'>
-                <a
-                  href='https://182maktab.uz'
-                  target='_blank'
-                  className=' header_login_btn'
-                >
-                  Login
-                </a>
-                <NavLink to='/contact' className=' header__button' onClick={goToTop}>
-                  {content[lang].navbar.contact}
-                </NavLink>
-              </div>
             </li>
           </ul>
         </nav>
@@ -155,7 +153,7 @@ const Header = () => {
 
         <div className='header__btn header_bottom_btn'>
           <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
-            Login
+            {content[lang].navbar.kirish}
           </a>
           <NavLink to='/contact' className=' header__button' onClick={goToTop}>
             {content[lang].navbar.contact}

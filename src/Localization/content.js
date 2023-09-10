@@ -9,6 +9,10 @@ const content = {
       administration: 'Администрация',
       contact_button: 'Контакт',
       about: 'Про школу',
+      school: 'Школа',
+      xodim: 'Сотрудники',
+      kirish: 'Войти',
+      kontakt: 'Контакт',
     },
     intro: {
       heading: 'Добро пожаловать в общеобразовательную среднюю школу № 182.',
@@ -58,6 +62,10 @@ const content = {
       administration: 'Мактаб маъмурияти',
       contact_button: 'Боғланиш',
       about: 'Мактаб ҳақида',
+      school: 'Мактаб',
+      xodim: 'Xодимлар',
+      kirish: 'Тизимга кириш',
+      kontakt: 'Контакт',
     },
     intro: {
       heading: '182-сонли умумий ўрта таълим мактабига ҳуш келибсиз. ',
