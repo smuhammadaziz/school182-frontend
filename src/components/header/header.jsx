@@ -118,7 +118,7 @@ const Header = () => {
               <ul className='header__list__nest'>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/administration'
+                    to='/contact'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >

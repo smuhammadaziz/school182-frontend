@@ -16,24 +16,21 @@ const Footer = () => {
         <div className='neo'>
           <img src={logo} className='brand' />
 
-          <p className='site_desc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ea quidem
-            aliquid, repellendus ad minima voluptatum ex facilis eos debitis!
-          </p>
+          <p className='site_desc'>{content[lang].intro.text}</p>
         </div>
 
         <div className='mesto'>
           <h5>{content[lang].footer.location}</h5>
           <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mesto_inline'>
             <p>
-              <i className='bi bi-house-door-fill'></i> New York, NY 10012, US
+              <i className='bi bi-house-door-fill'></i>Ташкент, 12 Қатартол 2
             </p>
             <p>
               <i className='bi bi-envelope-fill'></i>
-              info@example.com
+              182school@gmail.com
             </p>
             <p>
-              <i className='bi bi-telephone-fill'></i> + 01 234 567 88
+              <i className='bi bi-telephone-fill'></i> + 998 99 999 99 99
             </p>
           </div>
         </div>
@@ -53,15 +50,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
-      {/* <div className='footer__down'>
-        <a href='#' className='footer__down__link'>
-          {content[lang].neosoft.made}
-        </a>
-        <a href='tel:+998900291088' className='footer__down__link'>
-          Тел: +998 (90) 029 10 88
-        </a>
-      </div> */}
     </footer>
   );
 };

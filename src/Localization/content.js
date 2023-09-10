@@ -21,6 +21,12 @@ const content = {
     news: {
       heading: 'Новости школы',
       more: 'Более',
+      teachers: 'Учителя',
+      moreinfo: 'Более',
+      aboutschool: 'Информация о школе',
+      beststudents: 'Самые активные ученики',
+      admins: 'Администрация школы',
+      teachers: 'Лучшие учителя',
     },
     stats: {
       teachers: 'Преподавательский состав',
@@ -57,7 +63,7 @@ const content = {
       home: 'Бош саҳифа',
       news: 'Янгиликлар',
       students: ' Фаол ўқувчилар',
-      teachers: 'Ўқтувчилар',
+      teachers: 'Устозлар',
       contact: 'Боғланиш',
       administration: 'Мактаб маъмурияти',
       contact_button: 'Боғланиш',
@@ -74,6 +80,12 @@ const content = {
     news: {
       heading: 'Мактаб янгиликлари',
       more: 'Кўпроқ',
+      teachers: 'Устозлар',
+      moreinfo: 'Батафсил',
+      aboutschool: 'Мактаб ҳақида маълумотлар',
+      beststudents: 'Енг фаол ўқувчилар',
+      admins: 'Мактаб Маъмурияти',
+      teachers: 'Енг яхши устозлар',
     },
     stats: {
       teachers: 'Педагогик ходимлар',

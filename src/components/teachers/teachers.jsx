@@ -28,7 +28,7 @@ function Teachres() {
     <>
       <div className='TeachersPart'>
         <div className='container'>
-          <h1 className='sarlavha'>Ustozlar</h1>
+          <h1 className='sarlavha'>{content[lang].news.teachers}</h1>
           <div className='Teacherscards'>
             {ShortData.map(e => {
               return (
@@ -53,7 +53,7 @@ function Teachres() {
                       className='teacherssub__link'
                       onClick={goToTop}
                     >
-                      koproq
+                      {content[lang].news.moreinfo}
                     </NavLink>
                   </div>
                 </div>

@@ -52,7 +52,7 @@ const AllStudents = () => {
                     className='teacherssub__link'
                     onClick={goToTop}
                   >
-                    koproq
+                    {content[lang].news.moreinfo}
                   </NavLink>
                 </div>
               </div>
