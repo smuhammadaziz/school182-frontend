@@ -1,0 +1,52 @@
+.oneteacher .container {
+  padding: 0;
+  margin: 50px auto;
+}
+.oneteachers_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneteacher__info {
+  margin-left: 30px;
+}
+
+.oneteacher__info h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.oneteacher__info p {
+  margin: 20px 0;
+}
+
+.oneteacher__photo img {
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  .oneteachers_wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .oneteacher__info {
+    margin-left: 0px;
+  }
+
+  .oneteacher__info h2 {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .oneteacher__photo img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .oneteacher__photo img {
+    width: 260px;
+  }
+}
