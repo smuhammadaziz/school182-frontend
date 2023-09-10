@@ -4,7 +4,7 @@ import './students.scss';
 //components
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-import Studentss from '../../components/students/students';
+import AllStudents from '../../components/allstudents/students';
 
 function Students() {
   return (
@@ -21,7 +21,7 @@ function Students() {
         </section>
 
         <section>
-          <Studentss />
+          <AllStudents />
         </section>
       </main>
 

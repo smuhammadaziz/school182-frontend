@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './students.scss';
 import data from '../../database/data_students.json';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -9,9 +9,8 @@ import { NavLink } from 'react-router-dom';
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
-const Students = () => {
+const AllStudents = () => {
   const [lang] = useLang('ru');
-  const datas = data.slice(0, 6);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -26,9 +25,8 @@ const Students = () => {
   return (
     <div className='activepupils'>
       <div className='container'>
-        <h1 className='sarlavha'>{content[lang].students.heading}</h1>
         <div className='cards'>
-          {datas.map(e => {
+          {data.map(e => {
             return (
               <div className='card' key={e.id} data-aos='fade-right'>
                 <img src={e.img} alt='' />
@@ -54,12 +52,9 @@ const Students = () => {
             );
           })}
         </div>
-        <NavLink className='more students__morebtn' to='/students' onClick={goToTop}>
-          {content[lang].students.more}
-        </NavLink>
       </div>
     </div>
   );
 };
 
-export default Students;
+export default AllStudents;
