@@ -1,10 +1,10 @@
 import React from 'react';
-import './teachers.scss';
+import './students.scss';
 
 import personimg from '../../assets/images/person.jpg';
-import { NavLink } from 'react-router-dom';
 
-function OneTeacher() {
+import { NavLink } from 'react-router-dom';
+function OneStudent() {
   return (
     <div className='oneteacher'>
       <div className='container'>
@@ -14,7 +14,7 @@ function OneTeacher() {
           </div>
 
           <div className='oneteacher__info'>
-            <h2>John doe</h2>
+            <h2>John doe student 11 sinf oquvchisi</h2>
             <p>
               about teacher: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Alias, molestias sit! Aperiam ex dolorem expedita quod? Quisquam debitis
@@ -27,7 +27,7 @@ function OneTeacher() {
               Optio animi quod fugit dignissimos ullam voluptate perferendis earum
               laudantium accusamus asperiores!
             </p>
-            <NavLink to='/teachers'>hamma ustozlarga qaytish</NavLink>
+            <NavLink to='/students'>hamma oquvchilarga qaytish</NavLink>
           </div>
         </div>
       </div>
@@ -35,4 +35,4 @@ function OneTeacher() {
   );
 }
 
-export default OneTeacher;
+export default OneStudent;

@@ -47,6 +47,13 @@ const AllStudents = () => {
                   <p>
                     {e.teachener_name} {e.teachener_surname}
                   </p>
+                  <NavLink
+                    to='/students/1'
+                    className='teacherssub__link'
+                    onClick={goToTop}
+                  >
+                    koproq
+                  </NavLink>
                 </div>
               </div>
             );
