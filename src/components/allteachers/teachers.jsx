@@ -4,15 +4,14 @@ import 'aos/dist/aos.css';
 import Teachers from '../../database/Teachers.json';
 import TeacherPhoto from '../../assets/images/teacherphoto.jpg';
 import { useEffect } from 'react';
-import './style.scss';
+import './teachers.scss';
 import { NavLink } from 'react-router-dom';
 
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
-function Teachres() {
+function Allteachers() {
   const [lang] = useLang('ru');
-  const ShortData = Teachers.slice(0, 6);
 
   useEffect(() => {
     AOS.init();
@@ -28,9 +27,8 @@ function Teachres() {
     <>
       <div className='TeachersPart'>
         <div className='container'>
-          <h1 className='sarlavha'>Ustozlar</h1>
           <div className='Teacherscards'>
-            {ShortData.map(e => {
+            {Teachers.map(e => {
               return (
                 <div
                   className='TeachersData'
@@ -56,13 +54,10 @@ function Teachres() {
               );
             })}
           </div>
-          <NavLink className='more students__morebtn' to='/teachers' onClick={goToTop}>
-            {content[lang].students.more}
-          </NavLink>
         </div>
       </div>
     </>
   );
 }
 
-export default Teachres;
+export default Allteachers;

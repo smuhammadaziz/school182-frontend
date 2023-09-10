@@ -1,0 +1,73 @@
+.Teacherscards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.TeachersPart {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.TeachersPart .container {
+  padding: 0;
+}
+.TeachersData {
+  margin: 10px;
+  padding: 25px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+
+.TeachersData:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sarlavha {
+  margin: 20px;
+}
+
+.TeacherSub {
+  margin: 20px 0;
+}
+
+.TeacherSub p {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.teacherssub__link {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .TeachersPart {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .TeachersPart {
+    overflow: hidden;
+  }
+
+  .TeacherPhoto {
+    width: 300px;
+  }
+  .TeachersData {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .TeachersPart {
+    overflow: hidden;
+  }
+
+  .TeacherPhoto {
+    width: 250px;
+  }
+}

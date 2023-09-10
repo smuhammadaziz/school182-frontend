@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 function AllNews() {
-  const shortAmdins = admins.slice(0, 6);
   useEffect(() => {
     AOS.init();
   });
@@ -25,7 +24,7 @@ function AllNews() {
       <div className='admins'>
         <div className='container'>
           <div className='adminsWrapper'>
-            {shortAmdins.map(e => {
+            {admins.map(e => {
               return (
                 <NavLink
                   className='admin'

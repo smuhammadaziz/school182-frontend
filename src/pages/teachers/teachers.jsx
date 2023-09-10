@@ -3,7 +3,7 @@ import './teachers.scss';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-import Teachres from '../../components/teachers/teachers';
+import Allteachers from '../../components/allteachers/teachers';
 
 function Teachers() {
   return (
@@ -20,7 +20,7 @@ function Teachers() {
         </section>
 
         <section>
-          <Teachres />
+          <Allteachers />
         </section>
       </main>
 
