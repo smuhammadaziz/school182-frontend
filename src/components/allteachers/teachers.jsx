@@ -46,7 +46,11 @@ function Allteachers() {
                   <div className='TeacherSub'>
                     <h2 className='TeacherName'>{e.TeacherName}</h2>
                     <p className='Job'>{e.Job}</p>
-                    <NavLink to='/teachers/1' className='teacherssub__link'>
+                    <NavLink
+                      to='/teachers/1'
+                      className='teacherssub__link'
+                      onClick={goToTop}
+                    >
                       koproq
                     </NavLink>
                   </div>

@@ -11,6 +11,7 @@ import News from './pages/news/news';
 import Teachers from './pages/teachers/teachers';
 import SingleNewsPage from './pages/singlenews/news';
 import Students from './pages/students/students';
+import SingleTeacher from './pages/singleteacher/teachers';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/administration' element={<Admins />} />
         <Route path='/news' element={<News />} />
         <Route path='/news/1' element={<SingleNewsPage />} />
+        <Route path='/teachers/1' element={<SingleTeacher />} />
       </Routes>
     </div>
   );

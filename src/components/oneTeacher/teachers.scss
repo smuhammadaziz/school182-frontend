@@ -1,0 +1,25 @@
+.oneteacher .container {
+  padding: 0;
+  margin: 50px auto;
+}
+.oneteachers_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneteacher__info {
+  margin-left: 30px;
+}
+
+.oneteacher__info h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.oneteacher__info p {
+  margin: 20px 0;
+}
+
+.oneteacher__photo img {
+  border-radius: 20px;
+}
