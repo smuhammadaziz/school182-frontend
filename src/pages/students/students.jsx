@@ -3,13 +3,31 @@ import './students.scss';
 
 //components
 import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import Studentss from '../../components/students/students';
 
 function Students() {
   return (
-    <div className='students__page'>
+    <div className='admins__page'>
       <header>
         <Header />
       </header>
+
+      <main className='admins__main'>
+        <section>
+          <div className='contact__main__heading'>
+            <h2>Eng zor oquvchilar</h2>
+          </div>
+        </section>
+
+        <section>
+          <Studentss />
+        </section>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

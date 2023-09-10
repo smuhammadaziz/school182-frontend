@@ -26,7 +26,7 @@ const Students = () => {
   return (
     <div className='activepupils'>
       <div className='container'>
-        <h1 className='sarlavha'>{content[lang].students.heading}</h1>
+        {/* <h1 className='sarlavha'>{content[lang].students.heading}</h1> */}
         <div className='cards'>
           {datas.map(e => {
             return (
