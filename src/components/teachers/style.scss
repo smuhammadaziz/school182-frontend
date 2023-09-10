@@ -1,597 +1,73 @@
+.Teacherscards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .TeachersPart {
-  padding: 50px 0;
-  .TeachersHeaidng {
-    // font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 150.02%;
-    color: #003a5a;
-    margin: 60px 0 80px 0;
-    text-align: center;
-  }
-  .sarlavha {
-    margin-bottom: 40px;
-    text-align: center;
-    color: #003a5a;
-  }
+  text-align: center;
+  margin: 50px auto;
+}
 
-  .more {
-    // width: calc(15%);
-    padding: 15px 0;
-    background-color: #f88664;
-    border: 0;
-    border-radius: 5px;
-    margin: 0 auto;
-    display: inline;
+.TeachersPart .container {
+  padding: 0;
+}
+.TeachersData {
+  margin: 10px;
+  padding: 25px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
 
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #f88664;
-    font-size: 20px;
-    transition: all 0.5s ease-in;
-    text-transform: uppercase;
-    border: 2px solid #f88664;
+.TeachersData:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 
-    &:hover {
-      border: 2px solid #f88664;
-      background-color: transparent;
-      color: #f88664;
-    }
-  }
+.sarlavha {
+  margin: 20px;
+}
 
-  .Teacherscards {
-    // width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.TeacherSub {
+  margin: 20px 0;
+}
 
-    .TeachersData {
-      background: #ffffff;
-      box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-      width: 300px;
-      padding: 20px;
-      margin-bottom: 24px;
-      border-radius: 10px;
-      margin: 5px;
+.TeacherSub p {
+  margin: 10px;
+  font-size: 20px;
+}
 
-      .TeacherPhoto {
-        width: 260px;
-        height: 354px;
-        object-fit: cover;
-      }
+.teacherssub__link {
+  font-size: 20px;
+}
 
-      .TeacherName {
-        // font-family: 'Inter';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150.02%;
-        display: flex;
-        align-items: center;
-        display: block;
-        text-align: center;
-        color: #003a5a;
-        padding: 10px;
-      }
-      .Job {
-        // font-family: 'Inter';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150.02%;
-        display: flex;
-        align-items: center;
-        display: block;
-        text-align: center;
-        color: #b5b5b5;
-      }
-    }
+@media only screen and (max-width: 600px) {
+  .TeachersPart {
+    overflow: hidden;
   }
 }
-@media only screen and (max-width: 1400px) {
+
+@media only screen and (max-width: 480px) {
   .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px 0 100px 0;
-      text-align: center;
-    }
+    overflow: hidden;
+  }
 
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 320px;
-        padding: 20px;
-        margin-bottom: 24px;
-
-        .TeacherPhoto {
-          width: 280px;
-          height: 290px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
+  .TeacherPhoto {
+    width: 300px;
+  }
+  .TeachersData {
+    padding: 20px;
   }
 }
-@media only screen and (max-width: 1155px) {
+
+@media only screen and (max-width: 400px) {
   .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px 0 100px 0;
-      text-align: center;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 400px;
-        padding: 20px;
-        margin-bottom: 24px;
-
-        .TeacherPhoto {
-          width: 360px;
-          height: 370px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
+    overflow: hidden;
   }
-}
-@media only screen and (max-width: 954px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px 0 100px 0;
-      text-align: center;
-    }
 
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 340px;
-        padding: 20px;
-        margin-bottom: 24px;
-
-        .TeacherPhoto {
-          width: 300px;
-          height: 310px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 870px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px 0 100px 0;
-      text-align: center;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 650px;
-        padding: 20px;
-        margin-bottom: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        &:nth-child(even) {
-          .TeacherSub {
-            order: -1;
-          }
-        }
-
-        .TeacherPhoto {
-          width: 300px;
-          height: 310px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 768px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px auto;
-      text-align: center;
-      width: 300px;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 500px;
-        padding: 20px;
-        margin-bottom: 24px;
-        display: block;
-
-        .TeacherPhoto {
-          width: 460px;
-          height: 310px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 592px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 27px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px auto;
-      text-align: center;
-      width: 300px;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 400px;
-        padding: 20px;
-        margin-bottom: 24px;
-        display: block;
-
-        .TeacherPhoto {
-          width: 360px;
-          height: 380px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 447px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 27px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px auto;
-      text-align: center;
-      width: 300px;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 300px;
-        padding: 20px;
-        margin-bottom: 24px;
-        display: block;
-
-        .TeacherPhoto {
-          width: 260px;
-          height: 280px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 360px) {
-  .TeachersPart {
-    .TeachersHeaidng {
-      // font-family: 'Inter';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 27px;
-      line-height: 150.02%;
-      color: #003a5a;
-      margin: 60px auto;
-      text-align: center;
-      width: 250px;
-    }
-
-    .Teacherscards {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .TeachersData {
-        background: #ffffff;
-        box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
-        width: 250px;
-        padding: 20px;
-        margin-bottom: 24px;
-        display: block;
-
-        .TeacherPhoto {
-          width: 210px;
-          height: 230px;
-          object-fit: cover;
-        }
-
-        .TeacherName {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 22px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #003a5a;
-          padding: 10px;
-        }
-
-        .Job {
-          // font-family: 'Inter';
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 150.02%;
-          display: flex;
-          align-items: center;
-          display: block;
-          text-align: center;
-          color: #b5b5b5;
-        }
-      }
-    }
+  .TeacherPhoto {
+    width: 250px;
   }
 }

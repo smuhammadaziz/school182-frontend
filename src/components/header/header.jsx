@@ -66,7 +66,7 @@ const Header = () => {
                 </li>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/news'
+                    to='/about'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >
@@ -75,7 +75,7 @@ const Header = () => {
                 </li>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/about'
+                    to='/students'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >
@@ -101,7 +101,7 @@ const Header = () => {
                 </li>
                 <li className='header__nest__item'>
                   <NavLink
-                    to='/about'
+                    to='/teachers'
                     className='header__list__item__link'
                     onClick={goToTop}
                   >

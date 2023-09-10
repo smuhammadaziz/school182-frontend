@@ -8,7 +8,7 @@ import './style.scss';
 import { NavLink } from 'react-router-dom';
 
 function Teachres() {
-  const ShortData = Teachers.slice(0, 6);
+  const ShortData = Teachers.slice(0, 10);
 
   useEffect(() => {
     AOS.init();
@@ -24,7 +24,7 @@ function Teachres() {
     <>
       <div className='TeachersPart'>
         <div className='container'>
-          <h1 className='sarlavha'>Eng yaxshi ustozlar</h1>
+          <h1 className='sarlavha'>Ustozlar</h1>
           <div className='Teacherscards'>
             {ShortData.map(e => {
               return (
@@ -35,16 +35,23 @@ function Teachres() {
                   data-aos-duration='1000'
                   data-aos-delay='50'
                 >
-                  <img className='TeacherPhoto' src={TeacherPhoto} alt='' />
+                  <img
+                    className='TeacherPhoto'
+                    src={TeacherPhoto}
+                    alt='teacher rasm photo'
+                    width='350'
+                  />
                   <div className='TeacherSub'>
-                    <h3 className='TeacherName'>{e.TeacherName}</h3>
+                    <h2 className='TeacherName'>{e.TeacherName}</h2>
                     <p className='Job'>{e.Job}</p>
+                    <NavLink to='/teachers/1' className='teacherssub__link'>
+                      koproq
+                    </NavLink>
                   </div>
                 </div>
               );
             })}
           </div>
-          {/* <NavLink className='more'>koproq</NavLink> */}
         </div>
       </div>
     </>
