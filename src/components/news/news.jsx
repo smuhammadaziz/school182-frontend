@@ -38,6 +38,7 @@ function News() {
                   data-aos='fade-down'
                   data-aos-duration='1000'
                   data-aos-delay='50'
+                  onClick={goToTop}
                 >
                   <img src={e.img} className='newsImage' alt='' />
                   <strong className='Eventname'>{e.event}</strong>
