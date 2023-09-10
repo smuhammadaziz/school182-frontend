@@ -25,7 +25,7 @@ function Students() {
         </section>
       </main>
 
-      <footer>
+      <footer className='students_students'>
         <Footer />
       </footer>
     </div>
