@@ -60,8 +60,8 @@ function Teachres() {
               );
             })}
           </div>
-          <NavLink className='more students__morebtn' to='/teachers' onClick={goToTop}>
-            {content[lang].students.more}
+          <NavLink className='more' to='/teachers' onClick={goToTop}>
+            {content[lang].news.more}
           </NavLink>
         </div>
       </div>
