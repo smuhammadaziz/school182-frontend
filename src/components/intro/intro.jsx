@@ -26,7 +26,6 @@ function Intro() {
       <div className='container'>
         <Swiper
           cssMode={true}
-          navigation={true}
           pagination={true}
           mousewheel={true}
           keyboard={true}

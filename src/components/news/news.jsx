@@ -32,7 +32,7 @@ function News() {
             {ShortNews.map(e => {
               return (
                 <NavLink
-                  to='/news'
+                  to='/news/1'
                   className='newsCard'
                   key={e.id}
                   data-aos='fade-down'
