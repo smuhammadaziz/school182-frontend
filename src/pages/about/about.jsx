@@ -4,8 +4,7 @@ import './about.scss';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-import OneStudent from '../../components/onestudent/students';
-import OneAdmin from '../../components/oneadmin/admins';
+import Statistics from '../../components/statistics/statistics';
 import AboutSchool from '../../components/aboutus/about';
 
 function AboutUs() {
@@ -23,6 +22,7 @@ function AboutUs() {
         </section>
 
         <section>
+          <Statistics />
           <AboutSchool />
         </section>
       </main>
