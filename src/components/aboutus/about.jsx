@@ -7,33 +7,29 @@ function AboutSchool() {
       <section className='page-section' id='about'>
         <div className='container'>
           <div className='text-center'>
-            <h2 className='section-heading text-uppercase'>About</h2>
-            <h3 className='section-subheading text-muted'>
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
+            <h2 className='section-heading text-uppercase'>Информация о школе</h2>
+            <h3 className='section-subheading text-muted'>История 182-й школы</h3>
           </div>
           <ul className='timeline'>
             <li>
               <div className='timeline-image'>
                 <h4>
-                  Be Part
                   <br />
-                  Of Our
-                  <br />
-                  Story!
+                  Info
                 </h4>
               </div>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
-                  <h4>2009-2011</h4>
-                  <h4 className='subheading'>Our Humble Beginnings</h4>
+                  <h4>Информация</h4>
+                  <h4 className='subheading'>
+                    {/* <br /> */}
+                    Адресс, Телефон школы{' '}
+                  </h4>
                 </div>
                 <div className='timeline-body'>
                   <p className='text-muted'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
-                    recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
-                    consectetur!
+                    Чиланзорский район, город Ташкент, дом 6-12 <br />
+                    +998 71 273-63-46
                   </p>
                 </div>
               </div>
@@ -41,24 +37,21 @@ function AboutSchool() {
             <li className='timeline-inverted'>
               <div className='timeline-image'>
                 <h4>
-                  Be Part
                   <br />
-                  Of Our
-                  <br />
-                  Story!
+                  Students
                 </h4>
               </div>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
-                  <h4>March 2011</h4>
-                  <h4 className='subheading'>An Agency is Born</h4>
+                  <h4>2015-2016</h4>
+                  <h4 className='subheading'>Студенты в школе</h4>
                 </div>
                 <div className='timeline-body'>
                   <p className='text-muted'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
-                    recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
-                    consectetur!
+                    Всего в школе было организовано 35 классов. Из них 25 классов русские,
+                    10 классов узбекские. Всего в школе в 2015-2016 учебном году обучается
+                    1190 учеников. Из них 874 учатся в русских классах. В узбекских
+                    классах учатся 316 студентов.
                   </p>
                 </div>
               </div>
@@ -66,24 +59,20 @@ function AboutSchool() {
             <li>
               <div className='timeline-image'>
                 <h4>
-                  Be Part
                   <br />
-                  Of Our
-                  <br />
-                  Story!
+                  Junior
                 </h4>
               </div>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
-                  <h4>December 2015</h4>
-                  <h4 className='subheading'>Transition to Full Service</h4>
+                  <h4>2015-2016</h4>
+                  <h4 className='subheading'>Младшие школьники</h4>
                 </div>
                 <div className='timeline-body'>
                   <p className='text-muted'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
-                    recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
-                    consectetur!
+                    Общее количество учащихся начальной школы составляет 722 человека. Из
+                    них 565 учатся в классах русского языка. В узбекских классах учатся
+                    157 студентов.
                   </p>
                 </div>
               </div>
@@ -91,24 +80,19 @@ function AboutSchool() {
             <li className='timeline-inverted'>
               <div className='timeline-image'>
                 <h4>
-                  Be Part
                   <br />
-                  Of Our
-                  <br />
-                  Story!
+                  High
                 </h4>
               </div>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
-                  <h4>July 2020</h4>
-                  <h4 className='subheading'>Phase Two Expansion</h4>
+                  <h4>2015-2016</h4>
+                  <h4 className='subheading'>Ученики старшей школы</h4>
                 </div>
                 <div className='timeline-body'>
                   <p className='text-muted'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
-                    recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
-                    consectetur!
+                    Общее количество старшеклассников составляет 697 человек. Из них 488
+                    учатся в русских классах. В узбекских классах учатся 209 студентов.
                   </p>
                 </div>
               </div>
@@ -116,11 +100,8 @@ function AboutSchool() {
             <li className='timeline-inverted'>
               <div className='timeline-image'>
                 <h4>
-                  Be Part
                   <br />
-                  Of Our
-                  <br />
-                  Story!
+                  182
                 </h4>
               </div>
             </li>
