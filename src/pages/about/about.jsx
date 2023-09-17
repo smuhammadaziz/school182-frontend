@@ -8,6 +8,7 @@ import Statistics from '../../components/statistics/statistics';
 import AboutSchool from '../../components/aboutus/about';
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
+import AboutUsPics from '../../components/aboutuspics/about';
 function AboutUs() {
   const [lang] = useLang('ru');
   return (
@@ -26,6 +27,7 @@ function AboutUs() {
         <section>
           <Statistics />
           <AboutSchool />
+          <AboutUsPics />
         </section>
       </main>
 

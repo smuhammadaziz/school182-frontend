@@ -1,0 +1,25 @@
+.about__pics__heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.about__pics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+}
+
+.about__pics__list li {
+  margin: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 550px) {
+  .about__pics__list li img {
+    width: 300px;
+  }
+}
