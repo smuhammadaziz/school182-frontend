@@ -2,7 +2,7 @@
   padding: 0;
 }
 
-.cards {
+.activepupilss .cards {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   margin: 50px;
 }
 
-.card {
+.activepupilss .card {
   display: flex;
   transition: all 0.3s;
   display: flex;
@@ -26,18 +26,18 @@
   }
 }
 
-.card img {
+.activepupilss .card img {
   border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
-  .card {
+  .activepupilss .card {
     padding: 20px;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .card {
+  .activepupilss .card {
     display: flex;
     flex-direction: column;
     text-align: center;
