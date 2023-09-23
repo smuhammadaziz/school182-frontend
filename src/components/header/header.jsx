@@ -34,143 +34,24 @@ const Header = () => {
   };
   return (
     <div className='header'>
-      <div className='container  header__wrapper'>
-        <div className='header__logo'>
-          <NavLink to='/' className='header__logo__link'>
-            <p className='header__logo__text'>
-              <img src={logo} alt='Школа 182 toshkent' width='115' height='53' />
-            </p>
-          </NavLink>
-        </div>
+      <div className='container'>
+        <div className='header__top'>
+          <div className='header__top__logo__wrapper'>
+            <img src={logo} alt='182 maktab школа logo' />
+          </div>
+          <div className='header__top__contact'>
+            <select name='lang' id='lang' className='header__top__contact'>
+              <option value='ru'>ru</option>
+              <option value='uz'>uz</option>
+            </select>
 
-        <nav className='header__navbar' ref={elNavbar}>
-          <ul className='header__list'>
-            <li className='header__list__item'>
-              <NavLink to='/' className='header__list__item__link' onClick={goToTop}>
-                {content[lang].navbar.home}
-              </NavLink>
-            </li>
-            <li className='header__list__item header__list__nest_active'>
-              <p className='header__list__item__link'>
-                {content[lang].navbar.school} <AiOutlineCaretDown />
-              </p>
-              <ul className='header__list__nest'>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/news'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.news}
-                  </NavLink>
-                </li>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/about'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.about}
-                  </NavLink>
-                </li>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/students'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.students}
-                  </NavLink>
-                </li>
-              </ul>
-            </li>
-            <li className='header__list__item header__list__nest_active'>
-              <p className='header__list__item__link'>
-                {content[lang].navbar.xodim}
-                <AiOutlineCaretDown />
-              </p>
-              <ul className='header__list__nest'>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/administration'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.administration}
-                  </NavLink>
-                </li>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/teachers'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.teachers}
-                  </NavLink>
-                </li>
-              </ul>
-            </li>
-            <li className='header__list__item header__list__nest_active'>
-              <p className='header__list__item__link'>
-                {content[lang].navbar.kontakt}
-                <AiOutlineCaretDown />
-              </p>
-              <ul className='header__list__nest'>
-                <li className='header__nest__item'>
-                  <NavLink
-                    to='/contact'
-                    className='header__list__item__link'
-                    onClick={goToTop}
-                  >
-                    {content[lang].navbar.contact}
-                  </NavLink>
-                </li>
-                <li className='header__nest__item'>
-                  <a
-                    href='https://182maktab.uz'
-                    target='_blank'
-                    className=' header__list__item__link'
-                  >
-                    {content[lang].navbar.kirish}
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
-        <div className='header__language'>
-          <select
-            name='language'
-            id=''
-            className='header__select'
-            onChange={handleChangeSwitcher}
-          >
-            <option value='ru'>ru</option>
-            <option value='uz'>uz</option>
-          </select>
-        </div>
-
-        <div className='header__btn header_bottom_btn'>
-          <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
-            {content[lang].navbar.kirish}
-          </a>
-          <NavLink to='/contact' className=' header__button' onClick={goToTop}>
-            {content[lang].navbar.contact}
-          </NavLink>
-        </div>
-
-        <div className='header__hamburger'>
-          <Hamburger
-            toggled={isOpen}
-            toggle={setOpen}
-            size={27}
-            rounded
-            hideOutline={false}
-            onToggle={() => {
-              elNavbar.current.classList.toggle('header__hamburger--active');
-            }}
-          />
+            <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
+              {content[lang].navbar.kirish}
+            </a>
+            <NavLink to='/contact' className=' header__button' onClick={goToTop}>
+              {content[lang].navbar.contact}
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>

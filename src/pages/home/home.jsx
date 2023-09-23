@@ -19,13 +19,13 @@ function Home() {
         <Header />
       </header>
 
-      <main>
+      {/* <main>
         <Intro />
-        <Statistics />
         <News />
-        {/* <Administration /> */}
+        <Administration />
         <Teachres />
         <Students />
+        <Statistics />
         <section id='site-form'>
           <Form />
         </section>
@@ -34,7 +34,7 @@ function Home() {
 
       <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }
