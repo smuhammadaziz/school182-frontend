@@ -7,11 +7,11 @@ import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
 import logo from '../../assets/images/logo.svg';
-import morebtn from '../../assets/images/more.png';
+import down from '../../assets/images/down.png';
 
 import Hamburger from 'hamburger-react';
 
-import { AiOutlineCaretDown } from 'react-icons/ai';
+import { IoChevronDown } from 'react-icons/io5';
 
 const Header = () => {
   const elNavbar = useRef(null);
@@ -43,7 +43,12 @@ const Header = () => {
             </NavLink>
           </div>
           <div className='header__top__contact'>
-            <select name='lang' id='lang' className='header__top__contact__select'>
+            <select
+              name='lang'
+              id='lang'
+              className='header__top__contact__select'
+              onChange={handleChangeSwitcher}
+            >
               <option value='ru'>ru</option>
               <option value='uz'>uz</option>
             </select>
@@ -54,10 +59,22 @@ const Header = () => {
             <NavLink to='/contact' className=' header__button' onClick={goToTop}>
               {content[lang].navbar.contact}
             </NavLink>
+            <div className='header__top__hamburger'>
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                size={27}
+                rounded
+                hideOutline={false}
+                onToggle={() => {
+                  elNavbar.current.classList.toggle('header__hamburger--active');
+                }}
+              />
+            </div>
           </div>
         </div>
         <div className='header__bottom'>
-          <nav className='header__bottom__navbar'>
+          <nav className='header__bottom__navbar' ref={elNavbar}>
             <ul className='header__bottom__list'>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
@@ -65,39 +82,70 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
+                {/* <NavLink to='/' className='header__bottom__list__item__link'> */}
+                <p className='header__bottom__logo__icon'>
+                  {content[lang].navbar.school} <IoChevronDown />
+                </p>
+                <ul className='header__list__nest'>
+                  <li className='header__nest__item'>
+                    <NavLink
+                      to='/news'
+                      className='header__bottom__list__item__link'
+                      onClick={goToTop}
+                    >
+                      {content[lang].navbar.news}
+                    </NavLink>
+                  </li>
+                  <li className='header__nest__item'>
+                    <NavLink
+                      to='/about'
+                      className='header__bottom__list__item__link'
+                      onClick={goToTop}
+                    >
+                      {content[lang].navbar.about}
+                    </NavLink>
+                  </li>
+                  <li className='header__nest__item'>
+                    <NavLink
+                      to='/students'
+                      className='header__bottom__list__item__link'
+                      onClick={goToTop}
+                    >
+                      {content[lang].navbar.students}
+                    </NavLink>
+                  </li>
+                </ul>
+                {/* </NavLink> */}
+              </li>
+              <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab haqida
+                  Maktab yangiliklari
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab oquvchialr
+                  Fotogalareya
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab oquvchialr
+                  Togarakalr
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab oquvchialr
+                  Tizimga kirish
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab oquvchialr
-                </NavLink>
-              </li>
-              <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab oquvchialr
+                  Boglanish
                 </NavLink>
               </li>
             </ul>
-            <button type='button' className='header__bottom__button'>
+            {/* <button type='button' className='header__bottom__button'>
               <img src={morebtn} alt='182 maktab школа more button' />
-            </button>
+            </button> */}
           </nav>
         </div>
       </div>

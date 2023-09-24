@@ -18,15 +18,23 @@
 }
 
 .header__bottom__list__item {
+  position: relative;
   margin: 20px;
 }
+
 .header__bottom__list__item:first-child {
   margin-left: 0;
 }
 .header__bottom__list__item__link {
   text-decoration: none;
-  color: black;
+  color: #003a5a;
+  font-weight: 600;
 }
+
+.header__bottom__list__item__link:hover {
+  color: red;
+}
+
 .header_login_btn {
   text-decoration: underline;
 }
@@ -47,6 +55,11 @@
   border: 2px solid #003a5a;
   background-color: transparent;
   color: #003a5a;
+  font-weight: 700;
+}
+.header__top__contact {
+  display: flex;
+  align-items: center;
 }
 
 .header__top__contact__select {
@@ -54,6 +67,7 @@
   margin-right: 20px;
   border: none;
   font-size: 18px;
+  background-color: transparent;
 }
 
 .header__bottom__button {
@@ -69,4 +83,97 @@
 .header__bottom__navbar {
   display: flex;
   align-items: center;
+}
+.header__top__hamburger {
+  display: none;
+}
+
+.header__list__nest {
+  position: absolute;
+  display: none;
+  right: 50%;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  // border-radius: 10px;
+  // text-align: center;
+  padding: 20px 10px;
+
+  transform: translate(50%, 0);
+  color: #003a5a;
+  z-index: 1200;
+
+  .header__bottom__list__item__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #003a5a;
+    padding: 10px 40px;
+  }
+}
+.header__bottom__logo__icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #003a5a;
+  font-weight: 600;
+}
+
+.header__bottom__list__item:hover {
+  display: block;
+  .header__list__nest {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__button {
+    display: none;
+  }
+  .header__top__hamburger {
+    display: block;
+  }
+
+  .header__bottom__navbar {
+    display: none;
+  }
+
+  .header_login_btn {
+    display: none;
+  }
+
+  .header__hamburger--active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background-color: #003a5a;
+    text-align: center;
+    z-index: 1000px;
+  }
+
+  .header__bottom__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .header__top__hamburger {
+    z-index: 1010;
+  }
+
+  .header__bottom__list__item__link {
+    color: white;
+    font-size: 20px;
+  }
+
+  .header__bottom__list__item:first-child {
+    margin-left: 20px;
+  }
 }
