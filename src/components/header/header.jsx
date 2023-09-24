@@ -82,7 +82,6 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                {/* <NavLink to='/' className='header__bottom__list__item__link'> */}
                 <p className='header__bottom__logo__icon'>
                   {content[lang].navbar.school} <IoChevronDown />
                 </p>
@@ -115,7 +114,6 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
-                {/* </NavLink> */}
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
@@ -143,9 +141,6 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-            {/* <button type='button' className='header__bottom__button'>
-              <img src={morebtn} alt='182 maktab школа more button' />
-            </button> */}
           </nav>
         </div>
       </div>
