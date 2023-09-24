@@ -53,6 +53,47 @@ const Header = () => {
             </NavLink>
           </div>
         </div>
+        <div className='header__bottom'>
+          <nav className='header__bottom__navbar'>
+            <ul className='header__bottom__list'>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Bosh Sahifa
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab haqida
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab oquvchialr
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab oquvchialr
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab oquvchialr
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab oquvchialr
+                </NavLink>
+              </li>
+              <li className='header__bottom__list__item'>
+                <NavLink to='/' className='header__bottom__list__item__link'>
+                  Maktab oquvchialr
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   );

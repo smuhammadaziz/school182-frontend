@@ -19,7 +19,7 @@ function Home() {
         <Header />
       </header>
 
-      {/* <main>
+      <main>
         <Intro />
         <News />
         <Administration />
@@ -32,7 +32,7 @@ function Home() {
         <Map />
       </main>
 
-      <footer>
+      {/* <footer>
         <Footer />
       </footer> */}
     </div>

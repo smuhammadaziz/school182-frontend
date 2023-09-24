@@ -1,8 +1,28 @@
 .header .container {
-  padding: 0;
+  padding: 20px 0;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+.header__bottom__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__bottom__list__item {
+  margin: 20px;
+}
+.header__bottom__list__item:first-child {
+  margin-left: 0;
+}
+.header__bottom__list__item__link {
+  text-decoration: none;
+  color: black;
 }
