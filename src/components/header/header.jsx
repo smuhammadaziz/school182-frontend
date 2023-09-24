@@ -7,6 +7,7 @@ import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
 import logo from '../../assets/images/logo.svg';
+import morebtn from '../../assets/images/more.png';
 
 import Hamburger from 'hamburger-react';
 
@@ -37,10 +38,12 @@ const Header = () => {
       <div className='container'>
         <div className='header__top'>
           <div className='header__top__logo__wrapper'>
-            <img src={logo} alt='182 maktab школа logo' />
+            <NavLink to='/' className='' onClick={goToTop}>
+              <img src={logo} alt='182 maktab школа logo' />
+            </NavLink>
           </div>
           <div className='header__top__contact'>
-            <select name='lang' id='lang' className='header__top__contact'>
+            <select name='lang' id='lang' className='header__top__contact__select'>
               <option value='ru'>ru</option>
               <option value='uz'>uz</option>
             </select>
@@ -92,6 +95,9 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
+            <button type='button' className='header__bottom__button'>
+              <img src={morebtn} alt='182 maktab школа more button' />
+            </button>
           </nav>
         </div>
       </div>

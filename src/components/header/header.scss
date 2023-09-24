@@ -5,8 +5,9 @@
 .header__top {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #003a5a;
   padding-bottom: 20px;
+  align-items: center;
 }
 
 .header__bottom__list {
@@ -25,4 +26,47 @@
 .header__bottom__list__item__link {
   text-decoration: none;
   color: black;
+}
+.header_login_btn {
+  text-decoration: underline;
+}
+
+.header__button {
+  background-color: #003a5a;
+  color: white;
+  padding: 12px 35px;
+  // font-size: 20px;
+  border-radius: 0px;
+  text-decoration: none;
+  margin: 0 0px 0 20px;
+  border: 2px solid #003a5a;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__button:hover {
+  border: 2px solid #003a5a;
+  background-color: transparent;
+  color: #003a5a;
+}
+
+.header__top__contact__select {
+  padding: 5px 5px;
+  margin-right: 20px;
+  border: none;
+  font-size: 18px;
+}
+
+.header__bottom__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__bottom__button img {
+  width: 30px;
+}
+
+.header__bottom__navbar {
+  display: flex;
+  align-items: center;
 }

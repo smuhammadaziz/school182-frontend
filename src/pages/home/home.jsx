@@ -20,8 +20,8 @@ function Home() {
       </header>
 
       <main>
-        <Intro />
-        <News />
+        {/* <Intro /> */}
+        {/* <News />
         <Administration />
         <Teachres />
         <Students />
@@ -29,7 +29,7 @@ function Home() {
         <section id='site-form'>
           <Form />
         </section>
-        <Map />
+        <Map /> */}
       </main>
 
       {/* <footer>
