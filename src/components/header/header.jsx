@@ -11,7 +11,7 @@ import down from '../../assets/images/down.png';
 
 import Hamburger from 'hamburger-react';
 
-import { IoChevronDown } from 'react-icons/io5';
+import { IoChevronDown, IoColorFill } from 'react-icons/io5';
 
 const Header = () => {
   const elNavbar = useRef(null);
