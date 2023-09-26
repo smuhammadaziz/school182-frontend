@@ -1,5 +1,7 @@
 .forms {
   width: 100%;
+  background-color: #f78664;
+  padding: 1px 0;
 
   .sarlavha2 {
     text-align: center;
@@ -11,7 +13,7 @@
     background: #ffffff;
     box-shadow: 0px 3px 16px rgba(52, 52, 52, 0.12);
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px 0;
     form {
       display: flex;
       width: 80%;
@@ -57,9 +59,9 @@
         margin-top: 10px;
 
         button {
-          border: 2px solid #ec8d71;
+          border: 2px solid #003a5a;
           color: white;
-          background-color: #f78664;
+          background-color: #003a5a;
           padding: 12px 50px;
           font-size: 20px;
           text-transform: uppercase;
@@ -81,6 +83,7 @@
           &:hover {
             color: #f78664;
             background-color: white;
+            border: 2px solid #f78664;
           }
         }
 
@@ -124,18 +127,6 @@
       }
     }
   }
-}
-@media only screen and (max-width: 1145px) {
-}
-@media only screen and (max-width: 999px) {
-}
-@media only screen and (max-width: 835px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 690px) {
-}
-@media only screen and (max-width: 610px) {
 }
 @media only screen and (max-width: 450px) {
   .forms {
@@ -200,9 +191,6 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: 360px) {
 }
 @media only screen and (max-width: 340px) {
   .forms {

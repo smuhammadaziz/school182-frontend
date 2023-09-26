@@ -15,7 +15,7 @@ import Footer from '../../components/footer/footer';
 
 function Home() {
   return (
-    <div>
+    <div className='home-page'>
       <header id='site-header'>
         <Header />
       </header>
@@ -23,10 +23,10 @@ function Home() {
       <main>
         <Intro />
         <News />
-        <Administration />
-        <Teachres />
-        <Students />
+        {/* <Administration /> */}
+        {/* <Teachres /> */}
         <Statistics />
+        <Students />
         <section id='site-form'>
           <Form />
         </section>

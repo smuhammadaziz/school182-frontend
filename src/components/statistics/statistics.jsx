@@ -39,17 +39,6 @@ function Statistics() {
               data-aos-delay='50'
             >
               <strong className='StatNumber'>
-                <Number n={65} />+
-              </strong>
-              <p className='StatType'>{content[lang].stats.teachers}</p>
-            </div>
-            <div
-              className='StatCard'
-              data-aos='flip-down'
-              data-aos-duration='1000'
-              data-aos-delay='50'
-            >
-              <strong className='StatNumber'>
                 <Number n={1300} />+
               </strong>
               <p className='StatType'>{content[lang].stats.students}</p>
@@ -61,9 +50,9 @@ function Statistics() {
               data-aos-delay='50'
             >
               <strong className='StatNumber'>
-                <Number n={25} />
+                <Number n={65} />+
               </strong>
-              <p className='StatType'>{content[lang].stats.winner}</p>
+              <p className='StatType'>{content[lang].stats.teachers}</p>
             </div>
             <div
               className='StatCard'
@@ -75,6 +64,17 @@ function Statistics() {
                 <Number n={80} />%
               </strong>
               <p className='StatType'>{content[lang].stats.graduated}</p>
+            </div>
+            <div
+              className='StatCard'
+              data-aos='flip-down'
+              data-aos-duration='1000'
+              data-aos-delay='50'
+            >
+              <strong className='StatNumber'>
+                <Number n={25} />
+              </strong>
+              <p className='StatType'>{content[lang].stats.winner}</p>
             </div>
           </div>
         </div>

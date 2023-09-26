@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   margin-top: 100px;
+  margin-bottom: 80px;
   .container {
     display: flex;
     flex-direction: column;
@@ -193,7 +194,7 @@
 
 @media only screen and (max-width: 370px) {
   .students__morebtn {
-    margin-top: 2300px;
+    margin-top: 2400px;
   }
 }
 
