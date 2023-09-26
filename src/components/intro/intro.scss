@@ -23,7 +23,7 @@
   padding: 100px 50px;
   color: white;
   font-size: 30px;
-  background-image: url(../../assets/images/11111.jpg);
+  background-image: url(../../assets/images/bgg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,6 +196,26 @@
   .intro__i {
     top: 1em;
     font-size: 23px;
+    line-height: 8px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .swiper {
+    height: 440px;
+  }
+
+  .swiper-slide {
+    font-size: 13.5px;
+  }
+  .intro__p {
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .intro__i {
+    top: 1em;
+    font-size: 22px;
     line-height: 8px;
   }
 }

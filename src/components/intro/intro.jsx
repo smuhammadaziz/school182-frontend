@@ -38,6 +38,7 @@ function Intro() {
           className='mySwiper'
         >
           <SwiperSlide>
+            <p className='intro__p'>{content[lang].intro.text}</p>
             <h1 className='intro__heading'>
               <span className='intro__span'>
                 <i className='intro__i'></i>
@@ -46,9 +47,9 @@ function Intro() {
                 <i className='intro__i'>{content[lang].intro.heading}</i>
               </span>
             </h1>
-            <p className='intro__p'>{content[lang].intro.text}</p>
           </SwiperSlide>
           <SwiperSlide>
+            <p className='intro__p'>{content[lang].intro.text}</p>
             <h1 className='intro__heading'>
               <span className='intro__span'>
                 <i className='intro__i'></i>
@@ -57,7 +58,6 @@ function Intro() {
                 <i className='intro__i'>{content[lang].intro.heading}</i>
               </span>
             </h1>
-            <p className='intro__p'>{content[lang].intro.text}</p>
           </SwiperSlide>
         </Swiper>
       </div>
