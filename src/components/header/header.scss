@@ -89,6 +89,8 @@
 }
 
 .header__list__nest {
+  width: 300px;
+  text-align: center;
   position: absolute;
   display: none;
   right: 50%;
@@ -96,8 +98,6 @@
   list-style-type: none;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  // border-radius: 10px;
-  // text-align: center;
   padding: 20px 10px;
 
   transform: translate(50%, 0);
@@ -110,6 +110,12 @@
     flex-direction: column;
     color: #003a5a;
     padding: 10px 40px;
+    text-align-last: center;
+    border-bottom: 2px solid #cbc9c9;
+  }
+
+  .header__bottom__list__item__link:hover {
+    color: #f88664;
   }
 }
 .header__bottom__logo__icon {

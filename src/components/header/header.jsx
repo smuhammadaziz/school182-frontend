@@ -7,11 +7,10 @@ import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
 import logo from '../../assets/images/logo.svg';
-import down from '../../assets/images/down.png';
 
 import Hamburger from 'hamburger-react';
 
-import { IoChevronDown, IoColorFill } from 'react-icons/io5';
+import { IoChevronDown } from 'react-icons/io5';
 
 const Header = () => {
   const elNavbar = useRef(null);
@@ -78,12 +77,12 @@ const Header = () => {
             <ul className='header__bottom__list'>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Bosh Sahifa
+                  {content[lang].navbar.home}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <p className='header__bottom__logo__icon'>
-                  {content[lang].navbar.school} <IoChevronDown />
+                  {content[lang].navbar.about} <IoChevronDown />
                 </p>
                 <ul className='header__list__nest'>
                   <li className='header__nest__item'>
@@ -92,7 +91,7 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.news}
+                      {content[lang].navbar.about}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -101,7 +100,16 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.about}
+                      {content[lang].navbar.administration}
+                    </NavLink>
+                  </li>
+                  <li className='header__nest__item'>
+                    <NavLink
+                      to='/students'
+                      className='header__bottom__list__item__link'
+                      onClick={goToTop}
+                    >
+                      {content[lang].navbar.teachers}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -117,27 +125,27 @@ const Header = () => {
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Maktab yangiliklari
+                  {content[lang].navbar.news}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Fotogalareya
+                  {content[lang].navbar.foto}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Togarakalr
+                  {content[lang].navbar.course}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Tizimga kirish
+                  {content[lang].navbar.kirish}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  Boglanish
+                  {content[lang].navbar.kontakt}
                 </NavLink>
               </li>
             </ul>
