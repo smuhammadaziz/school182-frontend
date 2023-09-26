@@ -87,7 +87,7 @@ const Header = () => {
                 <ul className='header__list__nest'>
                   <li className='header__nest__item'>
                     <NavLink
-                      to='/news'
+                      to='/about'
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
@@ -96,7 +96,7 @@ const Header = () => {
                   </li>
                   <li className='header__nest__item'>
                     <NavLink
-                      to='/about'
+                      to='/administration'
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
@@ -105,7 +105,7 @@ const Header = () => {
                   </li>
                   <li className='header__nest__item'>
                     <NavLink
-                      to='/students'
+                      to='/teachers'
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
@@ -124,27 +124,31 @@ const Header = () => {
                 </ul>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
+                <NavLink to='/news' className='header__bottom__list__item__link'>
                   {content[lang].navbar.news}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
+                <NavLink to='/gallery' className='header__bottom__list__item__link'>
                   {content[lang].navbar.foto}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
+                <NavLink to='/courses' className='header__bottom__list__item__link'>
                   {content[lang].navbar.course}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
+                <a
+                  href='https://182maktab.uz'
+                  target='_blank'
+                  className=' header__bottom__list__item__link'
+                >
                   {content[lang].navbar.kirish}
-                </NavLink>
+                </a>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/' className='header__bottom__list__item__link'>
+                <NavLink to='/contact' className='header__bottom__list__item__link'>
                   {content[lang].navbar.kontakt}
                 </NavLink>
               </li>
