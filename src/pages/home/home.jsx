@@ -25,8 +25,8 @@ function Home() {
         <News />
         {/* <Administration /> */}
         {/* <Teachres /> */}
-        <Statistics />
         <Students />
+        <Statistics />
         <section id='site-form'>
           <Form />
         </section>

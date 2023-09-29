@@ -19,21 +19,6 @@ const Footer = () => {
           <p className='site_desc'>{content[lang].intro.text}</p>
         </div>
 
-        <div className='mesto'>
-          <h5>{content[lang].footer.location}</h5>
-          <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mesto_inline'>
-            <p>
-              <i className='bi bi-house-door-fill'></i>Ташкент, 12 Қатартол 2
-            </p>
-            <p>
-              <i className='bi bi-envelope-fill'></i>
-              182school@gmail.com
-            </p>
-            <p>
-              <i className='bi bi-telephone-fill'></i> + 998 99 999 99 99
-            </p>
-          </div>
-        </div>
         <ul className='sotsial'>
           <h5>{content[lang].footer.social}</h5>
           <li>
@@ -41,14 +26,21 @@ const Footer = () => {
             <a href='@school_182'>@school_182</a>
           </li>
           <li>
-            <img src={phone} alt='' />
-            <a href='+998 99 999 99 99'>+998 99 999 99 99</a>
-          </li>
-          <li>
             <img src={telegram} alt='' />
             <a href='@school_182'>@school_182</a>
           </li>
         </ul>
+        <div className='mesto'>
+          <h5>{content[lang].footer.location}</h5>
+          <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mesto_inline'>
+            <p>
+              <i className='bi bi-house-door-fill'></i>Ташкент, 12 Қатартол 2
+            </p>
+            <p>
+              <i className='bi bi-telephone-fill'></i> + 998 99 999 99 99
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
