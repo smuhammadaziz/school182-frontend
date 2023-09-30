@@ -81,9 +81,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <p className='header__bottom__logo__icon'>
-                  {content[lang].navbar.about} <IoChevronDown />
-                </p>
+                <p className='header__bottom__logo__icon'>{content[lang].navbar.about}</p>
                 <ul className='header__list__nest'>
                   <li className='header__nest__item'>
                     <NavLink

@@ -19,7 +19,7 @@
 
 .header__bottom__list__item {
   position: relative;
-  margin: 20px;
+  margin: 20px 35px;
 }
 
 .header__bottom__list__item:first-child {
@@ -49,6 +49,7 @@
   margin: 0 0px 0 20px;
   border: 2px solid #003a5a;
   transition: all 0.3s ease-in-out;
+  border-radius: 50px;
 }
 
 .header__button:hover {
@@ -134,9 +135,25 @@
   }
 }
 
+.header__bottom__list__item:nth-child(6) {
+  display: none;
+}
+
+.header__bottom__list__item:nth-child(7) {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .header__button {
     display: none;
+  }
+
+  .header__bottom__list__item:nth-child(6) {
+    display: block;
+  }
+
+  .header__bottom__list__item:nth-child(7) {
+    display: block;
   }
   .header__top__hamburger {
     display: block;

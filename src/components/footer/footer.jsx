@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='neo'>
           <img src={logo} className='brand' />
 
-          <p className='site_desc'>{content[lang].intro.text}</p>
+          <p className='site_desc'>{content[lang].footer.text}</p>
         </div>
 
         <ul className='sotsial'>

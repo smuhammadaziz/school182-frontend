@@ -15,6 +15,7 @@ import SingleTeacher from './pages/singleteacher/teachers';
 import SingleStudent from './pages/singlestudent/students';
 import SingleAdmin from './pages/singleadmins/admins';
 import AboutUs from './pages/about/about';
+import Gallery from './pages/gallery/gallery';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/students/1' element={<SingleStudent />} />
         <Route path='/admins/1' element={<SingleAdmin />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
     </div>
   );
