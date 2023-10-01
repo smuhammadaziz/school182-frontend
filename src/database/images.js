@@ -119,35 +119,35 @@ export const images = [
     caption: '11-sinf o`quvchilari bitiruvi',
   },
   {
-    src: '/src/assets/images/18.jpg',
+    src: 'https://telegra.ph/file/456af9c8dce867a032a13.jpg',
     width: 320,
     height: 110,
     tags: [{ value: 'Bitiruvchilar', title: 'Bitiruvchilar' }],
     caption: '11-sinf o`quvchilari bitiruvi',
   },
   {
-    src: '/src/assets/images/19.jpg',
+    src: 'https://telegra.ph/file/33e1758a90a12917b62b4.jpg',
     width: 320,
     height: 135,
     tags: [{ value: 'Bitiruvchilar', title: 'Bitiruvchilar' }],
     caption: '11-sinf o`quvchilari bitiruvi',
   },
   {
-    src: '/src/assets/images/20.jpg',
+    src: 'https://telegra.ph/file/ed6c6df4c96d668b88490.jpg',
     width: 320,
     height: 115,
     tags: [{ value: 'Boshlang`ich', title: 'Boshlang`ich' }],
     caption: '1-sinf o`quvchilari',
   },
   {
-    src: '/src/assets/images/21.jpg',
+    src: 'https://telegra.ph/file/0b87adc17d3ea3f252805.jpg',
     width: 320,
     height: 145,
     tags: [{ value: 'Bitiruvchilar', title: 'Bitiruvchilar' }],
     caption: 'Maktab bitiruvchilari',
   },
   {
-    src: '/src/assets/images/22.jpg',
+    src: 'https://telegra.ph/file/c34e8a519627d96956d24.jpg',
     width: 320,
     height: 145,
     tags: [
@@ -157,7 +157,7 @@ export const images = [
     caption: 'Maktabimiz ustozlari',
   },
   {
-    src: '/src/assets/images/23.jpg',
+    src: 'https://telegra.ph/file/7040d6e8b9d8fca57318e.jpg',
     width: 320,
     height: 170,
     tags: [
@@ -167,7 +167,7 @@ export const images = [
     caption: 'Maktabimiz ustozlari',
   },
   {
-    src: '/src/assets/images/24.jpg',
+    src: 'https://telegra.ph/file/38e1af56f65f84e3cd7b1.jpg',
     width: 320,
     height: 160,
     tags: [
@@ -177,7 +177,7 @@ export const images = [
     caption: 'Boshlang`ich sinf o`quvchilari',
   },
   {
-    src: '/src/assets/images/25.jpg',
+    src: 'https://telegra.ph/file/55417d6d7bd12d34c1e46.jpg',
     width: 320,
     height: 140,
     tags: [
