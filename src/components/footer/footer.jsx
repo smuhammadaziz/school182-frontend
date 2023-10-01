@@ -16,11 +16,10 @@ const Footer = () => {
         <div className='neo'>
           <img src={logo} className='brand' />
 
-          <p className='site_desc'>{content[lang].footer.text}</p>
+          <p className='footer__side__desc'>{content[lang].footer.text}</p>
         </div>
 
         <ul className='sotsial'>
-          <h5>{content[lang].footer.social}</h5>
           <li>
             <img src={instagram} alt='' />
             <a href='@school_182'>@school_182</a>
@@ -31,14 +30,10 @@ const Footer = () => {
           </li>
         </ul>
         <div className='mesto'>
-          <h5>{content[lang].footer.location}</h5>
-          <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mesto_inline'>
-            <p>
-              <i className='bi bi-house-door-fill'></i>Ташкент, 12 Қатартол 2
-            </p>
-            <p>
-              <i className='bi bi-telephone-fill'></i> + 998 99 999 99 99
-            </p>
+          <h5>{content[lang].footer.adres}</h5>
+          <div className='mesto_inline'>
+            <p>{content[lang].footer.location}</p>
+            <p>+ 998 (99) 999-99-99</p>
           </div>
         </div>
       </div>

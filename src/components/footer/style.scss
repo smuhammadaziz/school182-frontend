@@ -44,7 +44,6 @@ footer {
         text-align: center;
         margin-bottom: 40px;
         text-align: left;
-
         color: #ffffff;
       }
       li {
@@ -64,10 +63,10 @@ footer {
           color: white;
           font-style: normal;
           font-weight: 400;
-          font-size: 15px;
+          font-size: 16px;
           line-height: 150.02%;
           text-decoration: none;
-          margin-left: 10px;
+          margin-left: 15px;
         }
       }
     }
@@ -88,10 +87,10 @@ footer {
           width: 100%;
           display: flex;
           align-items: center;
+          margin: 10px 0;
 
           i {
             margin: 0;
-            margin-right: 10px;
           }
         }
       }
@@ -102,20 +101,14 @@ footer {
         font-size: 20px;
         line-height: 150.02%;
         margin: 0;
-        margin-bottom: 40px;
-
+        margin-bottom: 25px;
         text-align: left;
-
         color: #ffffff;
       }
       pre {
-        // font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-
         line-height: 150.02%;
-        /* or 30px */
-
         display: flex;
         align-items: center;
         text-align: center;
@@ -144,8 +137,6 @@ footer {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  // margin: 5px;
-
   &:hover {
     color: #dddddd;
   }
@@ -155,7 +146,6 @@ footer {
   footer {
     position: relative;
     width: 100%;
-
     background-color: #00394b;
     padding: 0;
 
@@ -168,22 +158,12 @@ footer {
       align-items: stretch;
       flex-direction: column;
       justify-content: center;
-
       padding-bottom: 120px;
       justify-content: space-around;
 
       .neo {
         width: calc(100% - 30%);
         margin: auto;
-
-        .site_desc {
-          font-style: normal;
-          opacity: 0.5;
-          font-weight: 500;
-          color: #ffffff;
-          text-align: center;
-          font-size: 14px;
-        }
 
         .brand {
           width: 100%;
@@ -221,7 +201,6 @@ footer {
 
           a {
             color: white;
-            // font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -233,33 +212,26 @@ footer {
       }
 
       .mesto {
-        text-align: center;
+        text-align: right;
         color: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
 
         .mesto_inline {
           width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-around;
           align-items: center;
-          text-align: center;
+          text-align: right;
 
           p {
             width: 100%;
-            display: flex;
-            align-items: center;
+            display: block;
+            align-items: left;
             justify-content: center;
             width: 100%;
-
-            i {
-              margin: 0;
-              margin-right: 10px;
-              text-align: center;
-            }
           }
         }
 
@@ -277,13 +249,9 @@ footer {
         }
 
         pre {
-          // font-family: 'Inter';
           font-style: normal;
           font-weight: 400;
-
           line-height: 150.02%;
-          /* or 30px */
-
           display: flex;
           align-items: center;
           text-align: center;
@@ -312,10 +280,30 @@ footer {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    // margin: 5px;
 
     &:hover {
       color: #dddddd;
     }
   }
+}
+
+.footer__side__desc {
+  font-style: normal;
+  opacity: 0.6;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+
+.mesto p {
+  display: block;
+  color: white;
+  text-align: left;
+}
+
+.mesto h5 {
+  color: red;
 }
