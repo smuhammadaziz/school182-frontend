@@ -25,7 +25,7 @@ function Intro() {
     <div className='intro'>
       <div className='container'>
         <Swiper
-          cssMode={true}
+          // cssMode={true}
           pagination={true}
           mousewheel={true}
           keyboard={true}
@@ -38,7 +38,7 @@ function Intro() {
           className='mySwiper'
         >
           <SwiperSlide>
-            <p className='intro__p'>{content[lang].intro.text}</p>
+            {/* <p className='intro__p'>{content[lang].intro.text}</p>
             <h1 className='intro__heading'>
               <span className='intro__span'>
                 <i className='intro__i'></i>
@@ -46,10 +46,10 @@ function Intro() {
               <span className='intro__span'>
                 <i className='intro__i'>{content[lang].intro.heading}</i>
               </span>
-            </h1>
+            </h1> */}
           </SwiperSlide>
           <SwiperSlide>
-            <p className='intro__p'>{content[lang].intro.text}</p>
+            {/* <p className='intro__p'>{content[lang].intro.text}</p>
             <h1 className='intro__heading'>
               <span className='intro__span'>
                 <i className='intro__i'></i>
@@ -57,7 +57,7 @@ function Intro() {
               <span className='intro__span'>
                 <i className='intro__i'>{content[lang].intro.heading}</i>
               </span>
-            </h1>
+            </h1> */}
           </SwiperSlide>
         </Swiper>
       </div>

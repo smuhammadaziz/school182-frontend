@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <div className='footer__bottom'>
         <div className='container'>
-          <p>© 2023. Все права защищены.</p>
+          <p>© 2023 Все права защищены.</p>
           <p>
             Разработано в{' '}
             <a href='https://t.me/rmuhammadaziz' target='_blank'>

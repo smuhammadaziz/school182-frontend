@@ -23,13 +23,17 @@
   padding: 100px 50px;
   color: white;
   font-size: 30px;
-  background-image: url(../../assets/images/bgg.jpg);
+  background-image: url(../../assets/images/bgg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide:nth-child(2) {
+  background-image: url(../../assets/images/bga.jpg);
 }
 
 .swiper-slide img {
