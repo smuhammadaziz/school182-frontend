@@ -1,0 +1,30 @@
+.galleries .container {
+  padding: 0;
+}
+
+.custom-overlay__caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-height: 240px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  font-size: 90%;
+}
+
+.custom-overlay__tag {
+  word-wrap: break-word;
+  display: inline-block;
+  background-color: white;
+  height: auto;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.2em 0.6em 0.3em;
+  border-radius: 0.25em;
+  color: black;
+  vertical-align: baseline;
+  margin: 2px;
+}
