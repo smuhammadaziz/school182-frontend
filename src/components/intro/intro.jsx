@@ -37,28 +37,9 @@ function Intro() {
           modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
           className='mySwiper'
         >
-          <SwiperSlide>
-            {/* <p className='intro__p'>{content[lang].intro.text}</p>
-            <h1 className='intro__heading'>
-              <span className='intro__span'>
-                <i className='intro__i'></i>
-              </span>
-              <span className='intro__span'>
-                <i className='intro__i'>{content[lang].intro.heading}</i>
-              </span>
-            </h1> */}
-          </SwiperSlide>
-          <SwiperSlide>
-            {/* <p className='intro__p'>{content[lang].intro.text}</p>
-            <h1 className='intro__heading'>
-              <span className='intro__span'>
-                <i className='intro__i'></i>
-              </span>
-              <span className='intro__span'>
-                <i className='intro__i'>{content[lang].intro.heading}</i>
-              </span>
-            </h1> */}
-          </SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
         </Swiper>
       </div>
     </div>

@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.scss';
 import logo from '../../assets/images/Vector.svg';
-import instagram from '../../assets/Icon/instagram.png';
-import phone from '../../assets/Icon/phone.png';
-import telegram from '../../assets/Icon/telegram.png';
+
+import insta from '../../assets/Icon/insta.svg';
+import tg from '../../assets/Icon/tg.svg';
+import fc from '../../assets/Icon/fc.svg';
+import yt from '../../assets/Icon/yt.svg';
 
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
@@ -21,11 +23,19 @@ const Footer = () => {
 
         <ul className='sotsial'>
           <li>
-            <img src={instagram} alt='' />
+            <img src={tg} alt='' width='40' />
             <a href='@school_182'>@school_182</a>
           </li>
           <li>
-            <img src={telegram} alt='' />
+            <img src={insta} alt='' width='40' />
+            <a href='@school_182'>@school_182</a>
+          </li>
+          <li>
+            <img src={fc} alt='' width='40' />
+            <a href='@school_182'>@school_182</a>
+          </li>
+          <li>
+            <img src={yt} alt='' width='40' />
             <a href='@school_182'>@school_182</a>
           </li>
         </ul>

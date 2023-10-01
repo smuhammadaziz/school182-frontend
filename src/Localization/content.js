@@ -8,7 +8,7 @@ const content = {
       students: 'Активные ученики школы',
       news: 'Школьные новости',
       foto: 'Фотогалерея',
-      course: 'Кружок',
+      course: 'Кружки',
       kirish: 'Войти',
       contact: 'Контакты',
       kontakt: 'Контакт',
