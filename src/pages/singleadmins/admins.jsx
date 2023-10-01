@@ -4,7 +4,6 @@ import './admins.scss';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-import OneStudent from '../../components/onestudent/students';
 import OneAdmin from '../../components/oneadmin/admins';
 
 function SingleAdmin() {
