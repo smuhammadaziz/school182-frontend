@@ -212,7 +212,7 @@ footer {
       }
 
       .mesto {
-        text-align: right;
+        text-align: center;
         color: white;
         display: flex;
         flex-direction: column;
@@ -224,7 +224,7 @@ footer {
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          text-align: right;
+          text-align: center;
 
           p {
             width: 100%;
@@ -301,9 +301,5 @@ footer {
 .mesto p {
   display: block;
   color: white;
-  text-align: left;
-}
-
-.mesto h5 {
-  color: red;
+  text-align: center;
 }
