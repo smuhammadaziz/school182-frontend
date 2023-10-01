@@ -29,10 +29,6 @@ const Form = () => {
               <p>{content[lang].form.phone}</p>
               <input type='number' placeholder={content[lang].form.phone} />
             </div>
-            <div className='input'>
-              <p>{content[lang].form.email}</p>
-              <input type='email' placeholder={content[lang].form.email} />
-            </div>
           </div>
           <div className='textarea'>
             <p>{content[lang].form.comment}</p>
