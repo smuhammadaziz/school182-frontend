@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './gallery.scss';
 import { Gallery } from 'react-grid-gallery';
 
