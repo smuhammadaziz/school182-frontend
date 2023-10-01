@@ -11,7 +11,7 @@ import content from '../../Localization/content';
 const Footer = () => {
   const [lang] = useLang('ru');
   return (
-    <footer>
+    <footer className='footer'>
       <div className='container footer-container'>
         <div className='neo'>
           <img src={logo} className='brand' />
@@ -35,6 +35,17 @@ const Footer = () => {
             <p>{content[lang].footer.location}</p>
             <p>+ 998 (99) 999-99-99</p>
           </div>
+        </div>
+      </div>
+      <div className='footer__bottom'>
+        <div className='container'>
+          <p>© 2023. Все права защищены.</p>
+          <p>
+            Разработано в{' '}
+            <a href='https://t.me/rmuhammadaziz' target='_blank'>
+              NEOSOFT
+            </a>
+          </p>
         </div>
       </div>
     </footer>

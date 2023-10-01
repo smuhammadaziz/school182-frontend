@@ -73,7 +73,6 @@
           cursor: pointer;
           transition: 0.5s ease;
           margin: 0 auto;
-          position: relative;
           left: 50px;
           -webkit-transition: 0.5s ease;
           -moz-transition: 0.5s ease;
@@ -180,8 +179,8 @@
         }
         .textarea {
           button {
-            right: 200px;
-            margin: 0 auto;
+            right: 100px;
+            // margin: 0 auto;
           }
           textarea {
             max-width: 300px;
