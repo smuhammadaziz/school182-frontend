@@ -1,5 +1,6 @@
 .galleries .container {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .custom-overlay__caption {
@@ -27,4 +28,9 @@
   color: black;
   vertical-align: baseline;
   margin: 2px;
+}
+
+.galleries h2 {
+  color: #003a5a;
+  margin-bottom: 20px;
 }

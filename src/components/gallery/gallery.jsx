@@ -23,6 +23,7 @@ function Galleries() {
   return (
     <div className='galleries'>
       <div className='container'>
+        <h2>ФОТОГАЛЕРЕЯ</h2>
         <div>
           <Gallery images={images} enableImageSelection={false} />
         </div>
