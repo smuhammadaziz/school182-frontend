@@ -9,8 +9,10 @@ import AboutSchool from '../../components/aboutus/about';
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 import AboutUsPics from '../../components/aboutuspics/about';
+
 function AboutUs() {
   const [lang] = useLang('ru');
+
   return (
     <div className='news__page'>
       <header>
