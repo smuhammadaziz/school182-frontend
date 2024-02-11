@@ -18,7 +18,7 @@ function Courses() {
 
       <main className='admins__main'>
         <div className='contact__main__heading'>
-          <h2>{content[lang].news.teachers}</h2>
+          <h2>{content[lang].news.course}</h2>
         </div>
         {/* <Course /> */}
 

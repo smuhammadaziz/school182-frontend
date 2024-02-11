@@ -4,7 +4,11 @@ import './admins.scss';
 import personimg from '../../assets/images/person.jpg';
 
 import { NavLink } from 'react-router-dom';
+import useLang from '../../Hooks/useLang';
+import content from '../../Localization/content';
+
 function OneAdmin() {
+  const [lang] = useLang('ru');
   return (
     <div className='oneteacher'>
       <div className='container'>
@@ -27,7 +31,7 @@ function OneAdmin() {
               Optio animi quod fugit dignissimos ullam voluptate perferendis earum
               laudantium accusamus asperiores!
             </p>
-            <NavLink to='/administration'>hamma adminlar qaytish</NavLink>
+            <NavLink to='/administration'>{content[lang].navbar.goAdmin}</NavLink>
           </div>
         </div>
       </div>

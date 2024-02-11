@@ -15,12 +15,6 @@ function SingleStudent() {
 
       <main className='news__main'>
         <section>
-          <div className='contact__main__heading'>
-            <h2>student haqida malumot</h2>
-          </div>
-        </section>
-
-        <section>
           <OneStudent />
         </section>
       </main>

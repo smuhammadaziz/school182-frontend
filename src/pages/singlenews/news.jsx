@@ -15,12 +15,6 @@ function SingleNewsPage() {
 
       <main className='news__main'>
         <section>
-          <div className='contact__main__heading'>
-            <h2>Title</h2>
-          </div>
-        </section>
-
-        <section>
           <SingleNews />
         </section>
       </main>

@@ -15,12 +15,6 @@ function SingleTeacher() {
 
       <main className='news__main'>
         <section>
-          <div className='contact__main__heading'>
-            <h2>UStoz haqida malumot</h2>
-          </div>
-        </section>
-
-        <section>
           <OneTeacher />
         </section>
       </main>

@@ -15,12 +15,6 @@ function SingleAdmin() {
 
       <main className='news__main'>
         <section>
-          <div className='contact__main__heading'>
-            <h2>adminlar haqida malumot</h2>
-          </div>
-        </section>
-
-        <section>
           <OneAdmin />
         </section>
       </main>
