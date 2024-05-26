@@ -30,7 +30,7 @@ function Home() {
         <section id='site-form'>
           <Form />
         </section>
-        <Map />
+        {/* <Map /> */}
       </main>
 
       <footer>

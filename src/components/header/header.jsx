@@ -32,6 +32,11 @@ const Header = () => {
       behavior: 'smooth',
     });
   };
+
+  // Ensure lang is valid and fallback to 'ru' if not
+  const currentLang = lang || 'ru';
+  const translations = content[currentLang] || content['ru'];
+
   return (
     <div className='header'>
       <div className='container'>
@@ -47,16 +52,17 @@ const Header = () => {
               id='lang'
               className='header__top__contact__select'
               onChange={handleChangeSwitcher}
+              value={currentLang}
             >
               <option value='ru'>ru</option>
               <option value='uz'>uz</option>
             </select>
 
-            <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
-              {content[lang].navbar.kirish}
+            <a href='https://182maktab.uz' target='_blank' className='header_login_btn'>
+              {translations.navbar.kirish}
             </a>
-            <NavLink to='/contact' className=' header__button' onClick={goToTop}>
-              {content[lang].navbar.contact}
+            <NavLink to='/contact' className='header__button' onClick={goToTop}>
+              {translations.navbar.contact}
             </NavLink>
             <div className='header__top__hamburger'>
               <Hamburger
@@ -77,11 +83,11 @@ const Header = () => {
             <ul className='header__bottom__list'>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.home}
+                  {translations.navbar.home}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <p className='header__bottom__logo__icon'>{content[lang].navbar.about}</p>
+                <p className='header__bottom__logo__icon'>{translations.navbar.about}</p>
                 <ul className='header__list__nest'>
                   <li className='header__nest__item'>
                     <NavLink
@@ -89,7 +95,7 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.about}
+                      {translations.navbar.about}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -98,7 +104,7 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.administration}
+                      {translations.navbar.administration}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -107,7 +113,7 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.teachers}
+                      {translations.navbar.teachers}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -116,38 +122,38 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.students}
+                      {translations.navbar.students}
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/news' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.news}
+                  {translations.navbar.news}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/gallery' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.foto}
+                  {translations.navbar.foto}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/courses' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.course}
+                  {translations.navbar.course}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <a
                   href='https://182maktab.uz'
                   target='_blank'
-                  className=' header__bottom__list__item__link'
+                  className='header__bottom__list__item__link'
                 >
-                  {content[lang].navbar.kirish}
+                  {translations.navbar.kirish}
                 </a>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/contact' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.kontakt}
+                  {translations.navbar.kontakt}
                 </NavLink>
               </li>
             </ul>
