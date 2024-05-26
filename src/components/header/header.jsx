@@ -138,11 +138,6 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <NavLink to='/courses' className='header__bottom__list__item__link'>
-                  {translations.navbar.course}
-                </NavLink>
-              </li>
-              <li className='header__bottom__list__item'>
                 <a
                   href='https://182maktab.uz'
                   target='_blank'
