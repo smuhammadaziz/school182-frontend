@@ -27,16 +27,18 @@ function Intro() {
         <Swiper
           // cssMode={true}
           pagination={true}
-          mousewheel={true}
+          // mousewheel={true}
           keyboard={true}
-          loop={true}
+          // loop={true}
           autoplay={{
             delay: 11111,
             disableOnInteraction: false,
           }}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+          modules={[Navigation, Pagination, Keyboard, Autoplay]}
           className='mySwiper'
         >
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
           <SwiperSlide></SwiperSlide>
           <SwiperSlide></SwiperSlide>
           <SwiperSlide></SwiperSlide>

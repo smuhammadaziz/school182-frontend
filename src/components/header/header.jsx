@@ -101,7 +101,7 @@ const Header = () => {
                       {content[lang].navbar.administration}
                     </NavLink>
                   </li>
-                  <li className='header__nest__item'>
+                  {/* <li className='header__nest__item'>
                     <NavLink
                       to='/teachers'
                       className='header__bottom__list__item__link'
@@ -109,7 +109,7 @@ const Header = () => {
                     >
                       {content[lang].navbar.teachers}
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li className='header__nest__item'>
                     <NavLink
                       to='/students'
@@ -131,12 +131,12 @@ const Header = () => {
                   {content[lang].navbar.foto}
                 </NavLink>
               </li>
-              <li className='header__bottom__list__item'>
+              {/* <li className='header__bottom__list__item'>
                 <NavLink to='/courses' className='header__bottom__list__item__link'>
                   {content[lang].navbar.course}
                 </NavLink>
-              </li>
-              <li className='header__bottom__list__item'>
+              </li> */}
+              {/* <li className='header__bottom__list__item'>
                 <a
                   href='https://182maktab.uz'
                   target='_blank'
@@ -149,7 +149,7 @@ const Header = () => {
                 <NavLink to='/contact' className='header__bottom__list__item__link'>
                   {content[lang].navbar.kontakt}
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
