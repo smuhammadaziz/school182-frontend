@@ -43,7 +43,7 @@ const Footer = () => {
           <h5>{content[lang].footer.adres}</h5>
           <div className='mesto_inline'>
             <p>{content[lang].footer.location}</p>
-            <p>+ 998 (99) 999-99-99</p>
+            <p>+998 ( 71 ) 273-63-46</p>
           </div>
         </div>
       </div>
