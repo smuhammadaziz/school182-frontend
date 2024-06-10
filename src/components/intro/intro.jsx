@@ -31,7 +31,7 @@ function Intro() {
           keyboard={true}
           // loop={true}
           autoplay={{
-            delay: 11111,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           modules={[Navigation, Pagination, Keyboard, Autoplay]}
