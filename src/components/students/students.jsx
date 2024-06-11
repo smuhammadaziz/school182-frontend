@@ -24,14 +24,14 @@ const Students = () => {
   };
 
   return (
-    <div className='activepupils'>
+    <div className='activepupilss'>
       <div className='container'>
-        <h1 className='sarlavha'>{content[lang].students.heading}</h1>
+        <h1 className='sarlavha activeaaaaaa'>{content[lang].students.heading}</h1>
         <div className='cards'>
-          {datas.map(e => {
+          {data.map(e => {
             return (
               <div className='card' key={e.id} data-aos='fade-right'>
-                <img src={e.img} alt='' />
+                <img src={e.img} alt='each pupil photo' width='250' height='250' />
                 <div className='texts'>
                   <h4 className='blue' style={{ fontWeight: 700 }}>
                     {e.name} {e.surname} <br /> {e.fathername}
