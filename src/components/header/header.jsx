@@ -52,7 +52,11 @@ const Header = () => {
               <option value='uz'>uz</option>
             </select>
 
-            <a href='https://182maktab.uz' target='_blank' className=' header_login_btn'>
+            <a
+              href='https://dashboard.182maktab.uz'
+              target='_blank'
+              className=' header_login_btn'
+            >
               {content[lang].navbar.kirish}
             </a>
             <NavLink to='/contact' className=' header__button' onClick={goToTop}>
