@@ -15,7 +15,7 @@ import { IoChevronDown } from 'react-icons/io5';
 const Header = () => {
   const elNavbar = useRef(null);
   const elNavbarr = useRef(null);
-  const [lang, setLang] = useLang('ru');
+  const [lang, setLang] = useLang('uz');
   const [isOpen, setOpen] = useState(false);
 
   const selectedValue = value => {
@@ -48,8 +48,8 @@ const Header = () => {
               className='header__top__contact__select'
               onChange={handleChangeSwitcher}
             >
-              <option value='ru'>ru</option>
               <option value='uz'>uz</option>
+              <option value='ru'>ru</option>
             </select>
 
             <a
