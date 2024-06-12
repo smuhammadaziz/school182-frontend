@@ -59,10 +59,16 @@ const Students = () => {
             ? blogs.map(e => {
                 return (
                   <div className='card' key={e.id} data-aos='fade-right'>
-                    <img src={e.img} alt='each pupil photo' width='250' height='250' />
+                    <img
+                      src={`${backurl}upload/${e.image}`}
+                      alt='each pupil photo'
+                      // width='250'
+                      height='250'
+                      className='w-full h-full object-contain'
+                    />
                     <div className='texts'>
                       <h4 className='blue' style={{ fontWeight: 700 }}>
-                        {e.name} {e.surname} <br /> {e.fathername}
+                        {e.name} {e.l_name} <br />
                       </h4>
                       <br />
                       <p>
@@ -70,15 +76,12 @@ const Students = () => {
                         {content[lang].students.text2}
                       </p>
                       <br />
-                      <p className='blue' style={{ fontWeight: 700 }}>
-                        {content[lang].students.teacher}
-                      </p>
                       <br />
                       <p>
                         {e.teachener_name} {e.teachener_surname}
                       </p>
                       <NavLink
-                        to='/students/1'
+                        to={`/students/${e.id}`}
                         className='teacherssub__link'
                         onClick={goToTop}
                       >
