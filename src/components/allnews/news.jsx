@@ -9,6 +9,10 @@ import photos from '../../assets/images/111.jpeg';
 
 import { NavLink } from 'react-router-dom';
 
+import backurl from '../../links';
+import { useState } from 'react';
+import moment from 'moment';
+
 function AllNews() {
   useEffect(() => {
     AOS.init();
@@ -21,30 +25,65 @@ function AllNews() {
     });
   };
 
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(`${backurl}/api/get/all/blog`, {
+          method: 'get',
+        });
+        if (!response.ok) {
+          throw new Error('Failed to fetch blogs');
+        }
+
+        const data = await response.json();
+        // console.log(data);
+
+        const reversedData = data.reverse();
+        setBlogs(reversedData);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
   return (
     <>
       <div className='admins'>
         <div className='container'>
           <div className='adminsWrapper'>
-            {admins.map(e => {
-              return (
-                <NavLink
-                  className='admin'
-                  key={e.id}
-                  data-aos='fade-right'
-                  data-aos-duration='1000'
-                  data-aos-delay='50'
-                  to='/news/1'
-                  onClick={goToTop}
-                >
-                  <img src={photos} className='AdminPhoto' alt='' />
-                  <div className='AdminSubs'>
-                    <strong className='AdminName'>Title</strong>
-                    {/* <p className='AdminPosition'>Yangilik desc </p> */}
-                  </div>
-                </NavLink>
-              );
-            })}
+            {blogs ? (
+              blogs.map(e => {
+                return (
+                  <NavLink
+                    className='admin'
+                    key={e.blog_id}
+                    data-aos='fade-right'
+                    data-aos-duration='1000'
+                    data-aos-delay='50'
+                    to={`/news/${e.blog_id}`}
+                    onClick={goToTop}
+                  >
+                    <img
+                      src={`${backurl}upload/${e.img}`}
+                      className='AdminPhoto'
+                      alt=''
+                    />
+                    <div className='AdminSubs'>
+                      <strong className='AdminName'>{e.title}</strong>
+                      {/* <p className='AdminPosition'>Yangilik desc </p> */}
+                    </div>
+                  </NavLink>
+                );
+              })
+            ) : (
+              <div>
+                <p>don't have any news</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
