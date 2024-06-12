@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import backurl from '../../links';
+import React, { useState, useEffect } from 'react';
+import moment from 'moment';
 import './intro.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,6 +23,31 @@ function Intro() {
     AOS.init();
   });
 
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(`${backurl}/api/admin/get/sides`, {
+          method: 'get',
+        });
+        if (!response.ok) {
+          throw new Error('Failed to fetch blogs');
+        }
+
+        const data = await response.json();
+        // console.log(data);
+
+        const reversedData = data.message.reverse();
+        setBlogs(reversedData);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
   return (
     <div className='intro'>
       <div className='container'>
@@ -37,11 +64,29 @@ function Intro() {
           modules={[Navigation, Pagination, Keyboard, Autoplay]}
           className='mySwiper'
         >
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
+          {blogs ? (
+            blogs.map(e => (
+              <SwiperSlide key={e.side_id}>
+                <div className='w-full h-100 overflow-hidden relative'>
+                  <img
+                    src={`${backurl}upload/${e.photo}`}
+                    alt={e.title}
+                    className='w-full h-full object-contain slider_image'
+                  />
+                </div>
+              </SwiperSlide>
+            ))
+          ) : (
+            <SwiperSlide>
+              <div className='w-full h-100 overflow-hidden relative'>
+                <img
+                  src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1200px-24701-nature-natural-beauty.jpg'
+                  alt='class image'
+                  className='w-full h-full object-contain slider_image'
+                />
+              </div>
+            </SwiperSlide>
+          )}
         </Swiper>
       </div>
     </div>

@@ -20,30 +20,15 @@
   height: 100%;
   text-align: center;
   font-size: 18px;
-  padding: 100px 50px;
   color: white;
   font-size: 30px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1200px-24701-nature-natural-beauty.jpg');
+  background-image: url('');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-slide:nth-child(2) {
-  background-image: url('https://thumbs.dreamstime.com/b/scenic-nature-landscape-path-near-lake-forest-path-tunnel-trees-near-lake-scenic-nature-autumn-landscape-panorama-view-115358410.jpg');
-}
-
-.swiper-slide:nth-child(3) {
-  background-image: url('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg');
-}
-.swiper-slide:nth-child(4) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Wonderful_Nature_Beauty.jpg');
-}
-.swiper-slide:nth-child(5) {
-  background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg');
 }
 
 .swiper-slide img {
@@ -176,9 +161,16 @@
     top: 1em;
     line-height: 10px;
   }
+
+  .swiper-slide img {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  .swiper-slide img {
+    height: 500px;
+  }
   .swiper-slide {
     font-size: 16px;
   }
@@ -195,8 +187,8 @@
 }
 
 @media only screen and (max-width: 361px) {
-  .swiper {
-    height: 440px;
+  .swiper-slide img {
+    height: 500px;
   }
 
   .swiper-slide {
