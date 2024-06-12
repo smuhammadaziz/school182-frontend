@@ -31,7 +31,7 @@ function App() {
         <Route path='/news/:blog_id' element={<SingleNewsPage />} />
         <Route path='/teachers/1' element={<SingleTeacher />} />
         <Route path='/students/:id' element={<SingleStudent />} />
-        <Route path='/admins/1' element={<SingleAdmin />} />
+        <Route path='/admins/:id' element={<SingleAdmin />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/courses' element={<Courses />} />
