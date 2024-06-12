@@ -30,7 +30,7 @@ function Contact() {
               <li className='contact__info__list__item'>
                 Адрес: Тошкент шаҳар, Чилонзор тумани, 6-чи квартал, 11A
               </li>
-              <li className='contact__info__list__item'>Tel: + 998 99 999 99 99</li>
+              <li className='contact__info__list__item'>Tel: +998 71 273 63 46</li>
               <li className='contact__info__list__item'>Telegram: @school_182</li>
               <li className='contact__info__list__item'>Instagram: @school_182</li>
               <li className='contact__info__list__item'>Facebook: @school_182</li>
