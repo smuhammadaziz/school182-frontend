@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='container footer-container'>
         <div className='neo'>
-          <img src={logo} className='brand' />
+          <img src={logo} className='brand mx-auto block ' />
 
           <p className='footer__side__desc'>{content[lang].footer.text}</p>
         </div>
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
       <div className='footer__bottom'>
         <div className='container'>
-          <p>© 2023 Все права защищены.</p>
+          <p>© 2024 Все права защищены.</p>
           <p>
             Разработано в{' '}
             <a href='https://t.me/rmuhammadaziz' target='_blank'>

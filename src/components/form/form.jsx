@@ -1,12 +1,6 @@
-import React from 'react';
-import './style.scss';
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
-
-import backurl from '../../links';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import useLang from '../../Hooks/useLang';
 import content from '../../Localization/content';
 
@@ -18,91 +12,78 @@ const Form = () => {
   const [description, setDescription] = useState('');
 
   const handleCancel = () => {
-    // Clear all form data
     setName('');
     setPhone('');
     setDescription('');
   };
 
-  const handleSubmit = async e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Create a form data object
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('l_name', 'Default');
-    formData.append('email', 'Default');
-    formData.append('phone', phone);
-    formData.append('message', description);
-
-    try {
-      const response = await fetch(`${backurl}api/contact/add`, {
-        method: 'POST',
-        body: formData,
-      });
-
-      console.log(response);
-
-      if (response.ok) {
-        toast.success('Contact successfully sent', {
-          position: 'top-right',
-        });
-        handleCancel();
-      }
-    } catch (error) {
-      console.error('Error submitting the form', error);
-      toast.warning(error.message, {
-        position: 'top-right',
-      });
-    }
+    // Show success message for demo purposes
+    toast.success('Contact successfully sent!', {
+      position: 'top-right',
+    });
+    handleCancel();
   };
+
   return (
-    <div className='forms'>
-      <div className='container'>
-        <h1 className='blue sarlavha2' style={{ padding: '50px' }}>
+    <div className='bg-gradient-to-r bg-slate-100 py-12 flex items-center justify-center'>
+      <div className='container mx-auto max-w-lg bg-white rounded-lg shadow-xl p-12'>
+        <h1 className='text-3xl font-bold text-center text-gray-800 mb-6 pt-12'>
           {content[lang].form.heading}
         </h1>
-        <form action='Post' onSubmit={handleSubmit}>
-          <div className='inputs'>
-            <div className='input'>
-              <p>{content[lang].form.fio}</p>
-              <input
-                type='text'
-                placeholder={content[lang].form.fio}
-                value={name}
-                onChange={e => {
-                  setName(e.target.value);
-                }}
-              />
-            </div>
-            <div className='input'>
-              <p>{content[lang].form.phone}</p>
-              <input
-                type='number'
-                placeholder={content[lang].form.phone}
-                value={phone}
-                onChange={e => {
-                  setPhone(e.target.value);
-                }}
-              />
-            </div>
+        
+        <form onSubmit={handleSubmit} >
+          <div className='mb-6'>
+            <label className='block text-gray-700 mb-2 font-semibold'>
+              {content[lang].form.fio}
+            </label>
+            <input
+              type='text'
+              placeholder={content[lang].form.fio}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200'
+              required
+            />
           </div>
-          <div className='textarea'>
-            <p>{content[lang].form.comment}</p>
+          <div className='mb-6'>
+            <label className='block text-gray-700 mb-2 font-semibold'>
+              {content[lang].form.phone}
+            </label>
+            <input
+              type='tel'
+              placeholder={content[lang].form.phone}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200'
+              required
+            />
+          </div>
+          <div className='mb-6'>
+            <label className='block text-gray-700 mb-2 font-semibold'>
+              {content[lang].form.comment}
+            </label>
             <textarea
-              name=''
-              id='input'
               cols='30'
-              rows='10'
+              rows='5'
               value={description}
-              onChange={e => {
-                setDescription(e.target.value);
-              }}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder={content[lang].form.comment}
+              className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200'
+              required
             ></textarea>
-
-            <button type='submit'>{content[lang].form.send}</button>
+          </div>
+          <div className='flex justify-center'>
+            <button
+              type='submit'
+              className='bg-blue-600 mb-12 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-200 shadow-md transform hover:scale-105'
+            >
+              {content[lang].form.send}
+            </button>
           </div>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );

@@ -14,16 +14,20 @@ import { IoChevronDown } from 'react-icons/io5';
 
 const Header = () => {
   const elNavbar = useRef(null);
-  const elNavbarr = useRef(null);
   const [lang, setLang] = useLang('uz');
   const [isOpen, setOpen] = useState(false);
 
-  const selectedValue = value => {
+  const selectedValue = (value) => {
     setLang(value);
   };
 
-  const handleChangeSwitcher = e => {
-    selectedValue(e.target.value);
+  const handleChangeSwitcher = (e) => {
+    const value = e.target.value;
+    if (['uz', 'ru'].includes(value)) {
+      selectedValue(value);
+    } else {
+      selectedValue('uz'); // fallback to 'uz' if unsupported language is selected
+    }
   };
 
   const goToTop = () => {
@@ -32,6 +36,7 @@ const Header = () => {
       behavior: 'smooth',
     });
   };
+
   return (
     <div className='header'>
       <div className='container'>
@@ -55,12 +60,12 @@ const Header = () => {
             <a
               href='https://dashboard.182maktab.uz'
               target='_blank'
-              className=' header_login_btn'
+              className='header_login_btn'
             >
-              {content[lang].navbar.kirish}
+              {content[lang]?.navbar?.kirish || 'Login'}
             </a>
-            <NavLink to='/contact' className=' header__button' onClick={goToTop}>
-              {content[lang].navbar.contact}
+            <NavLink to='/contact' className='header__button bg-sky-900' onClick={goToTop}>
+              {content[lang]?.navbar?.contact || 'Contact'}
             </NavLink>
             <div className='header__top__hamburger'>
               <Hamburger
@@ -70,7 +75,7 @@ const Header = () => {
                 rounded
                 hideOutline={false}
                 onToggle={() => {
-                  elNavbar.current.classList.toggle('header__hamburger--active');
+                  elNavbar.current?.classList.toggle('header__hamburger--active');
                 }}
               />
             </div>
@@ -81,11 +86,11 @@ const Header = () => {
             <ul className='header__bottom__list'>
               <li className='header__bottom__list__item'>
                 <NavLink to='/' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.home}
+                  {content[lang]?.navbar?.home || 'Home'}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
-                <p className='header__bottom__logo__icon'>{content[lang].navbar.about}</p>
+                <p className='header__bottom__logo__icon'>{content[lang]?.navbar?.about || 'About'}</p>
                 <ul className='header__list__nest'>
                   <li className='header__nest__item'>
                     <NavLink
@@ -93,7 +98,7 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.about}
+                      {content[lang]?.navbar?.about || 'About'}
                     </NavLink>
                   </li>
                   <li className='header__nest__item'>
@@ -102,58 +107,30 @@ const Header = () => {
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.administration}
+                      {content[lang]?.navbar?.administration || 'Administration'}
                     </NavLink>
                   </li>
-                  {/* <li className='header__nest__item'>
-                    <NavLink
-                      to='/teachers'
-                      className='header__bottom__list__item__link'
-                      onClick={goToTop}
-                    >
-                      {content[lang].navbar.teachers}
-                    </NavLink>
-                  </li> */}
                   <li className='header__nest__item'>
                     <NavLink
                       to='/students'
                       className='header__bottom__list__item__link'
                       onClick={goToTop}
                     >
-                      {content[lang].navbar.students}
+                      {content[lang]?.navbar?.students || 'Students'}
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/news' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.news}
+                  {content[lang]?.navbar?.news || 'News'}
                 </NavLink>
               </li>
               <li className='header__bottom__list__item'>
                 <NavLink to='/gallery' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.foto}
+                  {content[lang]?.navbar?.foto || 'Gallery'}
                 </NavLink>
               </li>
-              {/* <li className='header__bottom__list__item'>
-                <NavLink to='/courses' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.course}
-                </NavLink>
-              </li> */}
-              {/* <li className='header__bottom__list__item'>
-                <a
-                  href='https://182maktab.uz'
-                  target='_blank'
-                  className=' header__bottom__list__item__link'
-                >
-                  {content[lang].navbar.kirish}
-                </a>
-              </li>
-              <li className='header__bottom__list__item'>
-                <NavLink to='/contact' className='header__bottom__list__item__link'>
-                  {content[lang].navbar.kontakt}
-                </NavLink>
-              </li> */}
             </ul>
           </nav>
         </div>
