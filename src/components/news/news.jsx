@@ -58,7 +58,7 @@ function News() {
           {ShortNews.length > 0 ? (
             ShortNews.map((newsItem) => (
               <NavLink
-                to={`/news/${newsItem.blog_id}`}
+                to={`/news/1`}
                 className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105"
                 key={newsItem.blog_id}
                 data-aos="fade-down"

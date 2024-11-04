@@ -1,55 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import './news.scss';
-import img from '../../assets/images/111.jpeg';
-
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import { useNavigate, useParams } from 'react-router-dom';
-
-import backurl from '../../links';
 import moment from 'moment';
 
 function SingleNews() {
-  const [blog, setBlog] = useState([]);
-  const { blog_id } = useParams();
-  useEffect(() => {
-    async function fetchBlog() {
-      try {
-        const response = await fetch(`${backurl}api/get/blog/${blog_id}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch blog');
-        }
-        const data = await response.json();
-
-        // console.log(data);
-        setBlog(data.Data);
-      } catch (error) {
-        console.error('Error fetching blog:', error);
-        toast.error('Failed to fetch blog', {
-          position: 'top-right',
-        });
-      }
-    }
-    fetchBlog();
-  }, [blog_id]);
-
   return (
-    <div className='singleNews'>
-      <div className='container'>
-        <div className='singlenews_wrapper'>
-          <div className='single__wrapper__img'>
+    <div className="singleNews bg-gray-50 py-10 min-h-screen">
+      <div className="container mx-auto max-w-4xl px-6">
+        <div className="singlenews_wrapper bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="single__wrapper__img">
             <img
-              src={`${backurl}upload/${blog.img}`}
-              alt='single news page image'
-              width='600'
+              src="https://3.files.edl.io/4e8f/24/07/31/142934-74b1ff75-0b5f-4065-a0ba-45f3a4fbbf0c.jpg"
+              alt="single news page image"
+              className="w-full h-80 object-cover"
             />
           </div>
-          <div className='single__wrapper__text'>
-            <h2>{blog.title}</h2>
-            <p>{blog.descr}</p>
-            <p>{moment(blog.created_at).format('l')}</p>
-            <NavLink to='/news' className='singlenews_link'>
-              Yangiliklarga qaytish
+          <div className="single__wrapper__text p-6">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">School News | New Event</h2>
+            <p className="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid voluptatum recusandae cum modi 
+              molestias vero impedit nam blanditiis mollitia cumque error, est, minima corrupti nesciunt vitae itaque! 
+              Fugit dolor voluptates vero sunt officia ullam quae atque sit cupiditate adipisci non facere ex consequuntur 
+              nam architecto, sed eveniet reprehenderit molestiae.
+            </p>
+            <p className="text-gray-500 text-sm mb-6">
+              {moment("2024-04-24").format("DD.MM.YYYY")}
+            </p>
+            <NavLink to="/news" className="inline-block text-blue-600 hover:text-blue-800 transition duration-300">
+              &larr; Back to News
             </NavLink>
           </div>
         </div>
