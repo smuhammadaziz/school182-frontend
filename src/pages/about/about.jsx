@@ -22,7 +22,7 @@ function AboutUs() {
       <main className='news__main'>
         <section>
           <div className='contact__main__heading'>
-            <h2>{content[lang].news.aboutschool}</h2>
+            {/* <h2>{content[lang].news.aboutschool}</h2> */}
           </div>
         </section>
 

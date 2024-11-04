@@ -1,5 +1,4 @@
 import React from 'react';
-import './about.scss';
 
 import img1 from '../../assets/images/Picture1.jpg';
 import img2 from '../../assets/images/Picture2.jpg';
@@ -10,34 +9,34 @@ import img6 from '../../assets/images/Picture6.jpg';
 
 function AboutUsPics() {
   return (
-    <div className='about__pics'>
-      <div className='container'>
-        <h2 className='about__pics__heading'>Школьные фотографии</h2>
-
-        <ul className='about__pics__list'>
-          <li>
-            <img src={img1} alt='182 maktab kirish qismi' width='500' />
-            <p>Вход в школу </p>
+    <div className="bg-gray-50 py-12">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-8">Школьные фотографии</h2>
+        
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <li className="group">
+            <img src={img1} alt="Вход в школу" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Вход в школу</p>
           </li>
-          <li>
-            <img src={img2} alt='182 maktab kirish qismi' width='500' />
-            <p>Спортивный зал </p>
+          <li className="group">
+            <img src={img2} alt="Спортивный зал" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Спортивный зал</p>
           </li>
-          <li>
-            <img src={img3} alt='182 maktab kirish qismi' width='500' />
-            <p>Школьный стадион </p>
+          <li className="group">
+            <img src={img3} alt="Школьный стадион" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Школьный стадион</p>
           </li>
-          <li>
-            <img src={img4} alt='182 maktab kirish qismi' width='500' />
-            <p>Зал школы </p>
+          <li className="group">
+            <img src={img4} alt="Зал школы" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Зал школы</p>
           </li>
-          <li>
-            <img src={img5} alt='182 maktab kirish qismi' width='500' />
-            <p>Школьный класс </p>
+          <li className="group">
+            <img src={img5} alt="Школьный класс" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Школьный класс</p>
           </li>
-          <li>
-            <img src={img6} alt='182 maktab kirish qismi' width='500' />
-            <p>Школьная кухня </p>
+          <li className="group">
+            <img src={img6} alt="Школьная кухня" className="w-full h-60 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105" />
+            <p className="mt-4 text-lg text-gray-700">Школьная кухня</p>
           </li>
         </ul>
       </div>
