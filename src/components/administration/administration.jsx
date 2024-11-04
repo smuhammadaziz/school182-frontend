@@ -75,7 +75,7 @@ function Administration() {
                 data-aos='fade-right'
                 data-aos-duration='1000'
                 data-aos-delay='50'
-                to={`/admins/${admin.id}`}
+                to={`/admins/1`}
                 onClick={goToTop}
               >
                 <img
