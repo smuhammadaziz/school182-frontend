@@ -1,18 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.scss';
-import admins from '../../database/Administration.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { NavLink } from 'react-router-dom';
-
 import backurl from '../../links';
-import { useState, useEffect } from 'react';
-import moment from 'moment';
+
+const admins = [
+  {
+    "id": 1,
+    "name": "John",
+    "l_name": "Doe",
+    "position": "Principal",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane",
+    "l_name": "Smith",
+    "position": "Vice Principal",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael",
+    "l_name": "Johnson",
+    "position": "Head of Mathematics",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Emily",
+    "l_name": "Davis",
+    "position": "Science Coordinator",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  },
+  {
+    "id": 5,
+    "name": "David",
+    "l_name": "Brown",
+    "position": "Athletic Director",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Sophia",
+    "l_name": "Martinez",
+    "position": "Head of Arts",
+    "image": "https://www.hindustantimes.com/ht-img/img/2023/09/02/1600x900/teachers_day_1693652054152_1693652065719.jpg"
+  }
+]
+
 
 function Administration() {
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
 
   const goToTop = () => {
     window.scrollTo({
@@ -21,71 +63,42 @@ function Administration() {
     });
   };
 
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch(`${backurl}/api/admin/get/teachers`, {
-          method: 'get',
-        });
-        if (!response.ok) {
-          throw new Error('Failed to fetch blogs');
-        }
-
-        const data = await response.json();
-        // console.log(data);
-
-        const reversedData = data.reverse();
-        setBlogs(reversedData);
-      } catch (error) {
-        console.error('Error fetching blogs:', error);
-      }
-    };
-
-    fetchBlogs();
-  }, []);
-
   return (
-    <>
-      <div className='admins'>
-        <div className='container'>
-          <div className='adminsWrapper'>
-            {blogs ? (
-              blogs.map(e => {
-                return (
-                  <NavLink
-                    className='admin'
-                    key={e.id}
-                    data-aos='fade-right'
-                    data-aos-duration='1000'
-                    data-aos-delay='50'
-                    to={`/admins/${e.id}`}
-                    onClick={goToTop}
-                  >
-                    <img
-                      src={`${backurl}upload/${e.image}`}
-                      className='AdminPhoto'
-                      alt=''
-                    />
-                    <div className='AdminSubs'>
-                      <strong className='AdminName'>
-                        {e.name} {e.l_name}
-                      </strong>
-                      <p className='AdminPosition'>{e.position}</p>
-                    </div>
-                  </NavLink>
-                );
-              })
-            ) : (
-              <div>
-                <p>don't have any admins</p>
-              </div>
-            )}
-          </div>
+    <div className='admins'>
+      <div className='container'>
+        <div className='adminsWrapper'>
+          {admins.length > 0 ? (
+            admins.map((admin) => (
+              <NavLink
+                className='admin'
+                key={admin.id}
+                data-aos='fade-right'
+                data-aos-duration='1000'
+                data-aos-delay='50'
+                to={`/admins/${admin.id}`}
+                onClick={goToTop}
+              >
+                <img
+                  src={admin.image}
+                  className='AdminPhoto'
+                  alt={`${admin.name} ${admin.l_name}`}
+                />
+                <div className='AdminSubs'>
+                  <strong className='AdminName'>
+                    {admin.name} {admin.l_name}
+                  </strong>
+                  <p className='AdminPosition'>{admin.position}</p>
+                </div>
+              </NavLink>
+            ))
+          ) : (
+            <div>
+              <p>Don't have any admins</p>
+            </div>
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
