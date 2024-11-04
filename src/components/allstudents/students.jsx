@@ -117,8 +117,8 @@ const AllStudents = () => {
 
                 {/* Link to More Info */}
                 <NavLink
-                  to={`/students/${student.id}`}
-                  className="inline-block text-blue-600 font-medium text-sm sm:text-base underline hover:text-blue-800 transition-colors"
+                  to={`/students/1`}
+                  className="inline-block bg-slate-300 px-6 py-2 text-black  text-blue-600 font-medium text-sm sm:text-base rounded-md hover:text-blue-800 transition-colors"
                   onClick={goToTop}
                 >
                   {content[lang].news.moreinfo}

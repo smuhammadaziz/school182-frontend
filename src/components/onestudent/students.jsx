@@ -1,55 +1,35 @@
-import React, { useEffect, useState } from 'react';
-import './students.scss';
-
-import personimg from '../../assets/images/person.jpg';
-
-import { NavLink, useNavigate, useParams } from 'react-router-dom';
-
-import backurl from '../../links';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function OneStudent() {
-  const { id } = useParams();
-  const [blog, setBlog] = useState([]);
-
-  useEffect(() => {
-    async function fetchBlog() {
-      try {
-        const response = await fetch(`${backurl}api/admin/get/student/${id}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch blog');
-        }
-        const data = await response.json();
-
-        // console.log(data);
-        setBlog(data.Student);
-      } catch (error) {
-        console.error('Error fetching blog:', error);
-        toast.error('Failed to fetch blog', {
-          position: 'top-right',
-        });
-      }
-    }
-    fetchBlog();
-  }, [id]);
   return (
-    <div className='oneteacher onstudent'>
-      <div className='container'>
-        <div className='oneteachers_wrapper'>
-          <div className='oneteacher__photo'>
+    <div className="onstudent bg-gray-50 py-10 ">
+      <div className="container mx-auto max-w-4xl px-6">
+        <div className="onestudent_wrapper bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
+          
+          {/* Student Photo */}
+          <div className="onestudent__photo md:w-2/4">
             <img
-              src={`${backurl}upload/${blog.image}`}
-              alt='every teacher phot'
-              width='500'
+              src="https://cdn.pixabay.com/photo/2024/08/14/17/34/ai-generated-8969238_640.jpg"
+              alt="student photo"
+              className="w-full h-100 object-cover md:rounded-l-lg"
             />
           </div>
-
-          <div className='oneteacher__info'>
-            <h2>
-              {blog.name} {blog.l_name}
-            </h2>
-            <h2>{blog.class}</h2>
-            <p>{blog.descr}</p>
-            <NavLink to='/students'>Barcha o`quvchilarga qaytish</NavLink>
+          
+          {/* Student Info */}
+          <div className="onestudent__info p-6 md:w-2/4 flex flex-col justify-center">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-2">Alice Smith</h2>
+            <h3 className="text-xl text-gray-600 mb-4">Class: 11 A</h3>
+            <p className="text-gray-700 mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit dicta quisquam recusandae quo iure 
+              nam deleniti qui possimus similique.
+            </p>
+            <NavLink
+              to="/students"
+              className="block w-100 text-center bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              &larr; Back to Students
+            </NavLink>
           </div>
         </div>
       </div>

@@ -118,8 +118,8 @@ const Students = () => {
 
                 {/* Link to More Info */}
                 <NavLink
-                  to={`/students/${student.id}`}
-                  className="inline-block text-blue-600 font-medium text-sm sm:text-base underline hover:text-blue-800 transition-colors"
+                  to={`/students/1`}
+                  className="inline-block bg-slate-300 px-6 py-2 text-black  text-blue-600 font-medium text-sm sm:text-base rounded-md hover:text-blue-800 transition-colors"
                   onClick={goToTop}
                 >
                   {content[lang].news.moreinfo}
@@ -133,7 +133,7 @@ const Students = () => {
         <div className="text-center mt-8 sm:mt-10">
           <NavLink
             to="/students"
-            className="inline-block bg-blue-600 text-white py-2 px-6 sm:py-3 sm:px-8 rounded-full font-semibold text-base sm:text-lg hover:bg-blue-500 transition duration-300"
+            className="inline-block bg-blue-600 text-white py-1 px-10 sm:py-3 sm:px-8 rounded-md font-semibold text-base sm:text-lg hover:bg-blue-500 transition duration-300"
             onClick={goToTop}
           >
             {content[lang].students.more}
